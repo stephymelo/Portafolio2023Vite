@@ -1,0 +1,31 @@
+.home{
+    margin-left:20em;
+    margin-top:10em;
+    margin-right:120px;
+
+
+    &__section{
+        display: flex;
+    }
+
+    &__article{
+        &--title{
+
+        }
+        &--subtitle{
+            margin-top:2em;
+            padding-right:2em;
+    
+        }
+
+    }
+
+    .rectangle{
+        fill:$purple;
+    }
+
+
+
+
+    
+}
