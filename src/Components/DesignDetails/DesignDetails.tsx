@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { DesignDetailsObj } from '../../Types/DesignDetailsObj';
 import { useGetElemByIdParam } from '../../Utils/useGetElemByIdParams'
-import { useIdParam } from '../../Utils/useIdParams';
+
 
 
 interface DesignDetailsProps {
@@ -10,14 +10,13 @@ interface DesignDetailsProps {
 }
 
 const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
-    const id = useIdParam();
     const elem = useGetElemByIdParam(list);
 
 
     //Spread operator
 
     if (!elem) return null;
-    const { role, subtitle1, paragraph1, bannerImg } = elem;
+    const { role, subtitle1, bannerImg } = elem;
 
 
 

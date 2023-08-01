@@ -2,24 +2,20 @@ import React from 'react';
 import { Home } from './Components/Home/Home';
 import { Menu } from './Components/Menu/Menu';
 import {
-  BrowserRouter as Router,
   Route,
-  HashRouter,
-  BrowserRouter,
   Routes
 } from "react-router-dom";
 import { Artwork } from './Components/Artwork/Artwork';
 import { Design } from './Components/Design/Design';
 import { About } from './Components/About/About';
 import DesignDetails from './Components/DesignDetails/DesignDetails';
-import DesignElem from './Components/DesignElem/DesignElem';
 import { DesignDetailsObj } from './Types/DesignDetailsObj'
 import { Contact } from './Components/Contact/Contact';
 import bannerClose from './assets/Images/CloseProject/CloseBannerDesign.png';
 
 
 function App() {
-  const [designDetailElems, setDesignDetailsElems] = React.useState<DesignDetailsObj[]>([
+  const [designDetailElems] = React.useState<DesignDetailsObj[]>([
     {
 
       id: 0,

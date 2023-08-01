@@ -1,13 +1,12 @@
 import * as React from 'react';
 import { DesignElemObj } from '../../Types/DesignElemObj';
-import { Contact } from '../Contact/Contact';
 import DesignElem from '../DesignElem/DesignElem';
 
 interface Home {
 }
 
 export const Home: React.FC<Home> = () => {
-    const [designElems, setDesignElems] = React.useState<DesignElemObj[]>([
+    const [designElems] = React.useState<DesignElemObj[]>([
         {
             id: 0,
             tag: '01. UX Case Study',

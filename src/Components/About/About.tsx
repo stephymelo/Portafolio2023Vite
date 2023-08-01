@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Contact } from '../Contact/Contact';
 
 interface About {
 }

@@ -9,7 +9,7 @@ export type DesignElemProps = DesignElemObj & {
 
 }
 
-const DesignElem: React.FC<DesignElemProps> = ({ id, tag, title, description, image, path }) => {
+const DesignElem: React.FC<DesignElemProps> = ({ id, tag, title, description, image}) => {
     const navigate = useNavigate();
     const handleViewDesign: React.MouseEventHandler<HTMLHeadingElement> = () => {
         navigate(`/design/${id}`);

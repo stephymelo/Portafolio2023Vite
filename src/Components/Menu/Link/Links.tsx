@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 interface Link {
 }
 
 export const Links: React.FC<Link> = () => {
-    const style: React.CSSProperties = {
-        display: `block`,
-    }
+ 
     useEffect(() => {
         switch (window.location.pathname) {
             case '/':
