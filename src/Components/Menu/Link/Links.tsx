@@ -3,7 +3,7 @@ interface Link {
 }
 
 export const Links: React.FC<Link> = () => {
- 
+
     useEffect(() => {
         switch (window.location.pathname) {
             case '/':
@@ -43,20 +43,20 @@ export const Links: React.FC<Link> = () => {
 
             </li>
             <li className="item item--2">
-                <a href={`/about`}>About</a>
+                <a className='item--2--link' href={`/about`}>About</a>
                 <svg id='linesvg2' className='item--2--line' width="63" height="4" viewBox="0 0 63 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="63" y1="2" y2="2" stroke="#C3EEEC" strokeWidth="4" />
                 </svg>
             </li>
             <li className="item item--3">
-                <a href={`/design`}>Design</a>
+                <a className='item--3--link' href={`/design`}>Design</a>
                 <svg id='linesvg3' className='item--3--line' width="70" height="4" viewBox="0 0 70 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="70" y1="2" y2="2" stroke="#FFD698" strokeWidth="4" />
                 </svg>
 
             </li>
             <li className="item item--4">
-                <a href={`/artwork`}>Artwork</a>
+                <a className='item--4--link' href={`/artwork`}>Illustration</a>
                 <svg id='linesvg4' className='item--4--line' width="79" height="4" viewBox="0 0 79 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="79" y1="2" y2="2" stroke="#FFA794" strokeWidth="4" />
                 </svg>

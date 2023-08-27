@@ -19,6 +19,7 @@ function App() {
     {
 
       id: 0,
+      title:'Close',
       role: 'jaja',
       tasks: 'Designer',
       bannerImg:bannerClose,
@@ -39,6 +40,7 @@ function App() {
     {
 
       id: 1,
+      title:'Close',
       role: 'agh',
       tasks: 'Designer',
       bannerImg:bannerClose,
@@ -63,10 +65,10 @@ function App() {
       <Menu />
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/about"} element={<About />} />
-        <Route path={"/design"} element={<Design />} />
-        <Route path={"/artwork"} element={<Artwork />} />
-        <Route path={"/design/:id"} element={<DesignDetails list={designDetailElems} />} />
+        <Route path={"/about"} element={<About/>} />
+        <Route path={"/design"} element={<Design/>} />
+        <Route path={"/artwork"} element={<Artwork/>} />
+        <Route path={"/design/:id"} element={<DesignDetails list={designDetailElems}/>} />
       </Routes>
       <Contact />
     </div>

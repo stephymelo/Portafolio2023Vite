@@ -1,5 +1,6 @@
 export type DesignDetailsObj = {
     id: number;
+    title:string;
     role:string;
     tasks:string;
     bannerImg:string;

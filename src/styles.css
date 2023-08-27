@@ -52,8 +52,12 @@ input {
   border-radius: 0;
 }
 
-button, p, input, li, h1, h2, h3, h4, span, a {
+button, input, li, span, a, h5 {
   font-family: "Space Grotesk", sans-serif;
+}
+
+p, h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -216,6 +220,27 @@ footer {
     transition: 2s;
   }
 }
+.project {
+  margin-top: 3rem;
+  margin-left: 26rem;
+  width: 60%;
+}
+.project__banner {
+  border-radius: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .project {
+    margin-top: 3rem;
+    margin-left: 10rem;
+    width: 50%;
+  }
+  .project__banner {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
 .artwork {
   margin-left: 20em;
   margin-top: 10em;
@@ -227,8 +252,8 @@ footer {
   width: fit-content;
   position: fixed;
   z-index: 10;
-  left: 120px;
-  top: 300px;
+  left: 12rem;
+  top: 10rem;
 }
 
 .contact {
@@ -266,6 +291,9 @@ footer {
   display: block;
   opacity: 1;
 }
+.list .item--1--link {
+  text-align: right;
+}
 .list .item--1--line {
   margin-left: 10px;
   transition: all 0.5s ease-in-out;
@@ -277,6 +305,9 @@ footer {
 .list .item--2:hover .item--2--line {
   display: block;
   opacity: 1;
+}
+.list .item--2--link {
+  text-align: right;
 }
 .list .item--2--line {
   margin-left: 10px;
@@ -290,6 +321,9 @@ footer {
   display: block;
   opacity: 1;
 }
+.list .item--3--link {
+  text-align: right;
+}
 .list .item--3--line {
   margin-left: 10px;
   transition: all 0.4s ease-in-out;
@@ -301,6 +335,9 @@ footer {
 .list .item--4:hover .item--4--line {
   display: block;
   opacity: 1;
+}
+.list .item--4--link {
+  text-align: right;
 }
 .list .item--4--line {
   margin-left: 10px;
@@ -316,7 +353,7 @@ footer {
   src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 }
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 }
 #app {
