@@ -32,17 +32,28 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
             <h3 className='subtext'>Role</h3>
             <p>UX/UI Designer</p>
 
+
+
+
+
+
+        </article>
+
+
+
+        <article>
+            <h2 className='project__subtitle'>Background</h2>
+            <p className='elem__description'>{subtitle1}</p>
+
+
+
         </article>
 
 
 
 
-        <h2 className='project__subtitle'>Background</h2>
-        <p className='elem__description'>{subtitle1}</p>
-
-
-
-
+        <hr></hr>
+        <h2>More projects</h2>
 
 
 

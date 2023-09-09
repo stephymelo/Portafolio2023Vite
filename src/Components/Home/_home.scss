@@ -1,31 +1,75 @@
-.home{
-    margin-left:20em;
-    margin-top:10em;
-    margin-right:120px;
+.home {
+    margin-left: 24em;
+    margin-top: 11.5em;
+    margin-right: 18em;
 
-
-    &__section{
+    &__section {
+        width: 100%;
         display: flex;
     }
 
-    &__article{
-        &--title{
+    &__article {
+        width:70%;
+        &--title {
+            animation: color-animation 4s linear infinite;
+            --color-1: #6D73DB;
+            --color-2: #269E99;
+            --color-3: #EB6E53;
 
+            @keyframes color-animation {
+                0% {
+                    color: var(--color-1);
+                }
+                32% {
+                    color: var(--color-1);
+                }
+                33% {
+                    color: var(--color-2);
+                }
+                65% {
+                    color: var(--color-2);
+                }
+                66% {
+                    color: var(--color-3);
+                }
+                99% {
+                    color: var(--color-3);
+                }
+                100% {
+                    color: var(--color-1);
+                }
+            }
         }
-        &--subtitle{
-            margin-top:2em;
-            padding-right:2em;
-    
+        &--subtitle {
+            margin-top: 0.5em;
+            line-height: 160%;
+            font-weight: 300;
+            color:#606060
+            
+        }
+    }
+
+    &__article2{
+        width:10%;
+      
+        
+        &--selfie{
+            width: 100%;
+            border-radius: 8px;
         }
 
     }
 
-    .rectangle{
-        fill:$purple;
+    .rectangleSVG {
+        position: absolute; 
+        z-index: -10;
+        right:0;
+        top:0;
+        margin-top:3em;
+        border-radius: 8px;
     }
-
-
-
-
-    
+    .rectangle {
+        border-radius: 8px;
+        fill: $purple;
+    }
 }

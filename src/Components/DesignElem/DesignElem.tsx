@@ -25,7 +25,6 @@ const DesignElem: React.FC<DesignElemProps> = ({ id, tag, title, description, im
             </a>
             <h2 className='elem__title'>{title}</h2>
             <p className='elem__description'>{description}</p>
-            <button>See case study</button>
 
         </section>
     );

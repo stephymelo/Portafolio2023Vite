@@ -3,11 +3,12 @@ button,input,li,span,a,h5{
 }
 
 p,h1,h2,h3,h4{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 h1{
-    font-size:40px;
+    font-size:48px;
+    font-weight: 600;
     color:$textPrimary;
 }
 h2{
@@ -20,8 +21,9 @@ a{
     color: inherit;
 }
 p{
-    color:#6A7175;
+    color:$textPrimary;
     font-size: 16px;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 700px) {
