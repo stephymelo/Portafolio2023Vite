@@ -7,12 +7,17 @@ p,h1,h2,h3,h4{
 }
 
 h1{
-    font-size:48px;
+    font-size:52px;
     font-weight: 600;
     color:$textPrimary;
 }
 h2{
-    font-size:16px;
+    font-size:18px;
+    line-height: 35px;
+    color:$textPrimary;
+}
+h3{
+    font-size:14px;
     line-height: 35px;
     color:$textSecondary;
 }

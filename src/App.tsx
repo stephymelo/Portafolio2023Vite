@@ -131,7 +131,7 @@ function App() {
 
   ]);
   return (
-    <div className="App">
+    <div className="app">
       <Menu />
       <Routes>
         <Route path={"/"} element={<Home />} />

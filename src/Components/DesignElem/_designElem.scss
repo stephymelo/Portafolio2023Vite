@@ -7,23 +7,32 @@
         cursor: pointer;
     }
 
+
+    &__titles {
+        width: 80% ;
+        margin-top: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
    
 
     &__title {
-        margin-top: 1.2em;
+     
     }
 
     &__description {
-        font-size: 14px;
-        width: 50%;
+        font-size: 16px;
+        width: 80%;
         margin-top: 1.4em;
     }
     &__a {
         transition: 2s;
         width:200px;
         .image {
-            width: 60%;
-            height: 60%;
+            width:80%;
+            height: 80%;
             margin-top: 1em;
             border-radius: 11px;
         }
