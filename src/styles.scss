@@ -1,49 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap");
+@import "./Styles/reset";
+@import "./Styles/colors";
+@import "./Styles/types";
+@import "./Styles/elements";
+@import "./Components/About/about";
+@import "./Components/Home/home";
+@import "./Components/Design/design";
+@import "./Components/DesignElem/designElem";
+@import "./Components/DesignDetails/designDetails";
+@import "./Components/Artwork/artwork";
+@import "./Components/Menu/menu";
+@import "./Components/Contact/contact";
+@import "./Components/Menu/Link/links";
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
-@import './Styles/reset';
-@import './Styles/colors';
-@import './Styles/types';
-@import './Styles/elements';
-@import './Components/About/about';
-@import './Components/Home/home';
-@import './Components/Design/design';
-@import './Components/DesignElem/designElem';
-@import './Components/DesignDetails/designDetails';
-@import './Components/Artwork/artwork';
-@import './Components/Menu/menu';
-@import './Components/Contact/contact';
-@import './Components/Menu/Link/links';
-
-
-
-@font-face{
+@font-face {
     font-family: SpaceGrotesk, sans-serif;
-    src:  url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 }
-@font-face{
-    font-family: 'Lexend Deca', sans-serif;
-    src:  url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
-}
-
-@font-face{
-    font-family: PT Sans,sans-serif;
-    src:  url('../src/assets/Fonts/PTSans-Bold.ttf');
+@font-face {
+    font-family: "Lexend Deca", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap");
 }
 
+@font-face {
+    font-family: 'Fixture';
+    src: url("/src/assets/Fonts/Fixture-Black.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Americana';
+    src: url("/src/assets/Fonts/Americana.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 #app {
-    font-family: PT Sans,sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
+   
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
-    width:100%;
-    
-  }
-
- 
+    width: 100%;
+}

@@ -1,11 +1,15 @@
-.menu{
-    margin-top:3em;
-  
-    width: 100%;
+.menu {
+    margin-top: 3em;
+    margin-left:10em;
+    margin-right:10em;
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    
-   
+    flex-shrink: 0;
+
+    .logo {
+        width: 60px;
+    }
 }

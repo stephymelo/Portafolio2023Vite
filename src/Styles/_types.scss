@@ -1,25 +1,29 @@
-button,input,li,span,a,h5{
+button,input,li,span,a,h5,p,h2,h4{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-p,h1,h2,h3,h4{
-    font-family: 'PT Sans', sans-serif;
+h1,h3{
+    font-family: 'Americana', sans-serif;
 }
 
 h1{
     font-size:52px;
-    font-weight: 600;
+    font-weight: 400;
     color:$textPrimary;
 }
 h2{
-    font-size:18px;
+    font-size:24px;
     line-height: 35px;
+    font-weight: 600;
     color:$textPrimary;
 }
 h3{
-    font-size:14px;
+    font-size:24px;
     line-height: 35px;
-    color:$textSecondary;
+    color:$textPrimary;
+}
+h4{
+    color: $textSecondary;
 }
 a{
     font-size:16px;
@@ -28,7 +32,11 @@ a{
 p{
     color:$textPrimary;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
+}
+
+span{
+    font-size: 18px;
 }
 
 @media screen and (max-width: 700px) {

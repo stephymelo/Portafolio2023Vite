@@ -1,83 +1,20 @@
 .list {
-  
     display: flex;
     flex-direction: row;
+    gap: 30px;
     .item {
-      
-      
-        &--1 {
-            &:hover .item--1--line {
-                display: block;
-                opacity: 1;
-            }
-            &--link {
-                text-align: left;
-            }
+        color: $lightpurple;
+   
+        transition: color 0.3s;
 
-            &--line {
-                margin-top:5px;
-        
-                transition: all 0.5s ease-in-out;
-                transform-box: fill-box;
-                transform-origin: 50% 50%;
-                display: block;
-                opacity: 0;
-            }
+        &:hover {
+            color: $textPrimary;
+           
         }
 
-        &--2 {
-            &:hover .item--2--line {
-                display: block;
-                opacity: 1;
-            }
-
-            &--link {
-                text-align: right;
-            }
-            &--line {
-                margin-left: 10px;
-                transition: all 0.5s ease-in-out;
-                transform-box: fill-box;
-                transform-origin: 50% 50%;
-                display: block;
-                opacity: 0;
-            }
-        }
-        &--3 {
-            &:hover .item--3--line {
-                display: block;
-                opacity: 1;
-            }
-            &--link {
-                text-align: right;
-            }
-            &--line {
-                margin-left: 10px;
-                transition: all 0.4s ease-in-out;
-                transform-box: fill-box;
-                transform-origin: 50% 50%;
-                display: block;
-                opacity: 0;
-            }
-        }
-        &--4 {
-
-
-            &:hover .item--4--line {
-                display: block;
-                opacity: 1;
-            }
-            &--link {
-                text-align: right;
-            }
-            &--line {
-                margin-left: 10px;
-                transition: all 0.5s ease-in-out;
-                transform-box: fill-box;
-                transform-origin: 50% 50%;
-                display: block;
-                opacity: 0;
-            }
+        .link--active.active {
+            color: $textPrimary;
+           
         }
     }
 }

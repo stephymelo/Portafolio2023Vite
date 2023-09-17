@@ -1,11 +1,23 @@
-body{
-    background-color: $background;
-    
-  }
+body {
+  background: linear-gradient(159deg, #e7e7f4, #d9d9f1, #9c9cea);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
 
-footer{
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
   width: 100%;
   justify-content: center;
   margin-bottom: 3em;
-
 }

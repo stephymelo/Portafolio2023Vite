@@ -1,83 +1,56 @@
 .home {
-    margin-left: 16em;
-    margin-top: 7em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-    &__section {
-        width: 100%;
-        display: flex;
-    }
+
+    
 
     &__article {
-        width: 70%;
+        margin-left: 10em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin-top: 12em;
+        height: 80vh;
+    
 
-        .titles {
-            display: flex;
-            flex-direction: row;
+        &--subtitle {
+            color: $lightpurple;
+            font-weight: 600;
         }
 
         &--title {
-            margin-left: 0.3em;
-            animation: color-animation 4s linear infinite;
-            --color-1: #6d73db;
-            --color-2: #269e99;
-            --color-3: #eb6e53;
-
-            @keyframes color-animation {
-                0% {
-                    color: var(--color-1);
-                }
-                32% {
-                    color: var(--color-1);
-                }
-                33% {
-                    color: var(--color-2);
-                }
-                65% {
-                    color: var(--color-2);
-                }
-                66% {
-                    color: var(--color-3);
-                }
-                99% {
-                    color: var(--color-3);
-                }
-                100% {
-                    color: var(--color-1);
-                }
-            }
-        }
-       
-
-        &--subtitle {
             margin-top: 0.3em;
             line-height: 160%;
         }
+    }
 
-        &--subtitle2 {
-            margin-top: 1.3em;
-            line-height: 160%;
+    .design__container {
+        padding-left: 10em;
+        padding-right: 10em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10em;
+
+        .elem {
+       
+
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(5) {
+                align-self: flex-start;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                flex-direction: row-reverse;
+                align-self: flex-end;
+            }
         }
     }
+}
 
-    // &__article2{
-    //     width:10%;
-
-    //     &--selfie{
-    //         width: 100%;
-    //         border-radius: 8px;
-    //     }
-
-    // }
-
-    .rectangleSVG {
-        position: absolute;
-        z-index: -10;
-
-        margin-top: 3em;
-        border-radius: 8px;
-    }
-    .rectangle {
-        border-radius: 8px;
-        fill: $purple;
-    }
+@media screen and (max-width: 780px) {
 }

@@ -16,14 +16,17 @@ const DesignElem: React.FC<DesignElemProps> = ({ id, tag, title, description, im
     }
     return (
         <section className='elem' onClick={handleViewDesign}>
-            <a className='elem__a'>
-                <img className='image' src={image}></img>
-            </a>
-            <div className='elem__titles'>
-                <h2 className='elem__title'>{title}</h2>
-                <h3 className='elem__tag'>{tag}</h3>
+            <div className='image__container'>
+                <a className='elem__a'>
+                    <img className='image' src={image}></img>
+                </a>
             </div>
-            <p className='elem__description'>{description}</p>
+            <div className='elem__titles'>
+                <h3 className='elem__title'>{title}</h3>
+                <h4 className='elem__tag'>{tag}</h4>
+                <p className='elem__description'>{description}</p>
+            </div>
+
 
         </section>
     );
