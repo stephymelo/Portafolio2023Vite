@@ -373,16 +373,6 @@ footer {
   }
 }
 
-.circle {
-  width: 30px;
-  height: 30px;
-  background: radial-gradient(circle, #ff6b6b, #ffb366);
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none; /* This prevents the circle from capturing mouse events */
-  transition: transform 0.1s ease; /* Add a transition for smoother movement */
-}
-
 @font-face {
   font-family: SpaceGrotesk, sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
