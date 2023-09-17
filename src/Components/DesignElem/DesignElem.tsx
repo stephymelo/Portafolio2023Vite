@@ -21,7 +21,7 @@ const DesignElem: React.FC<DesignElemProps> = ({ id, tag, title, description, im
                     <img className='image' src={image}></img>
                 </a>
             </div>
-            <div className='elem__titles'>
+            <div className='elem__text'>
                 <h3 className='elem__title'>{title}</h3>
                 <h4 className='elem__tag'>{tag}</h4>
                 <p className='elem__description'>{description}</p>

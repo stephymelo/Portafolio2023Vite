@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Home } from './Components/Home/Home';
 import { Menu } from './Components/Menu/Menu';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import AnimatedCursor from "react-animated-cursor"
 import { Artwork } from './Components/Artwork/Artwork';
 import { Design } from './Components/Design/Design';
 import { About } from './Components/About/About';
@@ -20,7 +21,7 @@ import bannerEficacia from './assets/Images/EficaciaProject/BannerDesignEfipunto
 //Verby
 import bannerVerby from './assets/Images/VerbyProject/BannerDesignVerby.png';
 import { Loader } from './Components/Loader/Loader';
-import Cursor from './Components/Cursor/Cursor';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 
 
@@ -149,6 +150,7 @@ function App() {
       ) : (
         <div>
           <Menu />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path={"/home"} element={<Home setLoading={setLoading} />} />
@@ -158,7 +160,22 @@ function App() {
             <Route path={"/design/:id"} element={<DesignDetails list={designDetailElems} />} />
           </Routes>
           <Contact />
-          <Cursor/>
+          <AnimatedCursor
+            innerSize={8}
+            outerSize={35}
+            innerScale={1}
+            outerScale={1.7}
+            outerAlpha={0}
+            outerStyle={{
+              border: '3px solid var(--cursor-color)',
+         
+            }}
+            innerStyle={{
+              backgroundColor: 'var(--cursor-color)'
+            }}
+          />
+
+
         </div>
       )}
     </div>

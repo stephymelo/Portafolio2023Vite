@@ -1,15 +1,25 @@
-.menu {
-    margin-top: 3em;
-    margin-left:10em;
-    margin-right:10em;
+/* Container for the entire menu */
+.menu__container {
+    position: fixed;
+    top: 3em; 
+    left: 0;
+    right: 0;
+    padding-left: 10em;
+    padding-right: 10em;
+    width: 100%;
+    z-index: 10;
+  }
+  
 
+  .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
-
-    .logo {
-        width: 60px;
-    }
-}
+  }
+  
+  
+  .menu .logo {
+    width: 60px;
+  }
+  

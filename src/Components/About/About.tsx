@@ -1,23 +1,30 @@
 import * as React from 'react';
 
+import selfie from '../../assets/Images/Myself/Selfie.png';
+
 interface About {
 }
 
 export const About: React.FC<About> = () => {
     return (
         <section className='about'>
+
             <article className='about__article--1'>
-                <h1>A bit about me</h1>
-                <h2>My name is Stephanie Melo and I’m an interactive media designer, passionate about creating unique experiences for user’s in this tech-savy world. I have done a little of everything when it comes to design but I’m mostly work in UX/UI Design and Fullstack Development with React. Being able to know the whole design process, from devising innovative solutions to actually putting them to the test with prototypes and later bringing them to life for a user is something that I love that I can do.</h2>
-                <h2>I currently work on projects with React, AWS and prototyping with Figma. My day to day also includes learning new skills and concepts to keep up to date with the ever growing industry.</h2>
+                <article className='content'>
+                    <h1 className='title'>A bit about me</h1>
+                    <div className='paragraph'>
+                        <p>My name is Stephanie Melo and I’m an interactive media designer, passionate about creating unique experiences for user’s in this tech-savy world. I have done a little of everything when it comes to design but I’m mostly work in UX/UI Design and Fullstack Development with React. Being able to know the whole design process, from devising innovative solutions to actually putting them to the test with prototypes and later bringing them to life for a user is something that I love that I can do.</p>
+                        <p>I currently work on projects with React, AWS and prototyping with Figma. My day to day also includes learning new skills and concepts to keep up to date with the ever growing industry.</p>
+                    </div>
+                </article>
+                <div className='selfie'>
+                    <img className='selfie__image' src={selfie}></img>
+                </div>
             </article>
 
-            <article>
-                <svg width="300" height="500">
-                    <rect className='rectangle' width="306" height="745" />
-                </svg>
 
-            </article>
+
+
             <article className='about__article--2'>
                 <h1 className='title'>Who am I?</h1>
                 <ul className='listAbout'>
