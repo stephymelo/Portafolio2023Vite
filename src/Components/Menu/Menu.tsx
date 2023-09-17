@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Links from './Link/Links';
 interface Menu {
 }
@@ -6,11 +7,10 @@ interface Menu {
 export const Menu: React.FC<Menu> = () => {
     return (
         <nav className='menu'>
-
-            <a className='menu__home' href={`/`}>
-                <img className='logo' src='/kitty.svg'></img>
-            </a>
-            <Links />
+            <Link to='/home' className='menu__home'>
+                <img className='logo' src='/kitty.svg' alt='Logo' />
+            </Link>
+            <Links/>
         </nav>
     );
 }

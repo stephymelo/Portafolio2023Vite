@@ -14,21 +14,12 @@
 @import "./Components/Menu/menu";
 @import "./Components/Contact/contact";
 @import "./Components/Menu/Link/links";
+@import "./Components/Loader/Loader";
+@import "./Components/Cursor/Cursor";
 
 @font-face {
     font-family: SpaceGrotesk, sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
-}
-@font-face {
-    font-family: "Lexend Deca", sans-serif;
-    src: url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap");
-}
-
-@font-face {
-    font-family: 'Fixture';
-    src: url("/src/assets/Fonts/Fixture-Black.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {

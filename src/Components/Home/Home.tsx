@@ -15,10 +15,16 @@ import bannerEficacia from '../../assets/Images/EficaciaProject/BannerDesignEfip
 import bannerVerby from '../../assets/Images/VerbyProject/BannerDesignVerby.png';
 
 
-interface Home {
+interface HomeProps {
+    setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Home: React.FC<Home> = () => {
+export const Home: React.FC<HomeProps> = ({setLoading}) => {
+    React.useEffect(() => {
+        setLoading(false);
+      }, [setLoading]);
+
+
     const [designElems] = React.useState<DesignElemObj[]>([
         {
             id: 0,
