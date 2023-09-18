@@ -101,7 +101,10 @@ span {
 
 @media screen and (max-width: 700px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 18px;
   }
 }
 html {
@@ -195,6 +198,12 @@ footer {
   margin-top: 0.3em;
   line-height: 160%;
 }
+.home__article .subtitle__container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
 .home .design__container {
   padding-left: 10em;
   padding-right: 10em;
@@ -214,6 +223,53 @@ footer {
   text-align: right;
 }
 
+@media screen and (max-width: 780px) {
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .home__article {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 12em;
+    height: 80vh;
+  }
+  .home__article--subtitle {
+    color: #7a7a9a;
+    font-weight: 600;
+  }
+  .home__article--title {
+    margin-top: 0.3em;
+    line-height: 160%;
+  }
+  .home__article .subtitle__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .home .design__container {
+    padding-left: 10em;
+    padding-right: 10em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+  }
+  .home .design__container .elem:nth-child(1), .home .design__container .elem:nth-child(3), .home .design__container .elem:nth-child(5) {
+    align-self: flex-start;
+  }
+  .home .design__container .elem:nth-child(2), .home .design__container .elem:nth-child(4) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+  .home .design__container .elem:nth-child(2) .elem__text, .home .design__container .elem:nth-child(4) .elem__text {
+    text-align: right;
+  }
+}
 .design {
   margin-left: 20em;
   margin-top: 10em;
@@ -230,27 +286,21 @@ footer {
   cursor: pointer;
 }
 .elem .image__container {
-  position: relative;
-  width: 80%; /* Adjust to your desired width */
-  height: 80%; /* Adjust to your desired height */
-  margin-top: 1em;
-  border-radius: 11px;
+  width: 80%;
   overflow: hidden;
 }
-.elem__a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.4s;
+.elem .image__wrapper {
+  border-radius: 12px;
+  overflow: hidden;
 }
 .elem .image {
-  width: 100%;
-  height: 100%;
   background-size: cover;
-  background-position: center;
+  border-radius: 12px;
+  transition: transform 0.4s;
 }
-.elem__a:hover {
-  transform: scale(1.02); /* Adjust the scale factor as needed */
+.elem .image:hover {
+  border-radius: 12px;
+  transform: scale(1.02);
 }
 .elem__text {
   margin-top: 1.06em;
@@ -310,6 +360,27 @@ footer {
   width: 60px;
 }
 
+@media screen and (max-width: 780px) {
+  .menu__container {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    z-index: 10;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu .logo {
+    width: 40px;
+  }
+}
 .contact {
   width: 100%;
   margin-top: 100px;
@@ -333,6 +404,14 @@ footer {
   margin-right: 10px;
 }
 
+.menu-web {
+  display: block;
+}
+
+.menu-mobile {
+  display: none;
+}
+
 .list {
   display: flex;
   flex-direction: row;
@@ -349,6 +428,64 @@ footer {
   color: #313235;
 }
 
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .menu-web {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    position: absolute;
+    padding-top: 16px;
+    right: 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+  }
+  .menu-mobile.active {
+    max-height: 300px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+  }
+  .list .item {
+    font-size: 14px;
+    color: #7a7a9a;
+    transition: color 0.3s;
+  }
+  .list .item:hover {
+    color: #313235;
+  }
+  .list .item .link--active.active {
+    color: #313235;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .burger-menu .line {
+    fill: #7a7a9a;
+    transition: all 0.3s ease; /* Add a transition for smooth animation */
+  }
+  /* CSS for active state */
+  .burger-menu.active .line:nth-child(1) {
+    width: 60%; /* Change width for the first line */
+    transform: translateX(20%); /* Move the first line */
+  }
+  .burger-menu.active .line:nth-child(2) {
+    width: 70%;
+    transform: translateX(20%);
+  }
+  .burger-menu.active .line:nth-child(3) {
+    width: 100%;
+    transform: translateX(-30%);
+  }
+}
 .loader {
   display: flex;
   justify-content: center;

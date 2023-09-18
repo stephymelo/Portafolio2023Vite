@@ -34,7 +34,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
 
-    }, 3500); // Adjust the time as needed
+    }, 2000); // Adjust the time as needed
   }, []);
 
 

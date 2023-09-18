@@ -1,54 +1,46 @@
 .elem {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  .image__container {
+    width: 80%;
+    
+
+    overflow: hidden;
+  }
+
+  .image__wrapper {
+    border-radius: 12px;
+    overflow: hidden; 
+  }
+
+  .image {
+    background-size: cover;
+
+    border-radius: 12px;
+    transition: transform 0.4s;
+  }
+  .image:hover {
+    border-radius: 12px;
+    transform: scale(1.02);
+  }
+
+  &__text {
+    margin-top: 1.06em;
     display: flex;
-    flex-direction: row;
-    gap: 24px;
-    
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
 
-    :hover {
-        cursor: pointer;
-    }
-
-    .image__container {
-        position: relative;
-        width: 80%; /* Adjust to your desired width */
-        height: 80%; /* Adjust to your desired height */
-        margin-top: 1em;
-        border-radius: 11px;
-        overflow: hidden;
-      }
-      
-      &__a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.4s;
-      }
-      
-      .image {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-      }
-      
-      &__a:hover {
-        transform: scale(1.02); /* Adjust the scale factor as needed */
-      }
-
-    &__text {
-        margin-top: 1.06em;
-        display: flex;
-        flex-direction: column;
-        gap:16px;
-        text-align: left;
-       
-    }
-
-    &__description {
-    
-        
-    }
+  &__description {
+  }
 }
 
 @media screen and (max-width: 700px) {

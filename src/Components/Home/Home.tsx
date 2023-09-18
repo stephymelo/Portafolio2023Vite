@@ -19,10 +19,10 @@ interface HomeProps {
     setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Home: React.FC<HomeProps> = ({setLoading}) => {
+export const Home: React.FC<HomeProps> = ({ setLoading }) => {
     React.useEffect(() => {
         setLoading(false);
-      }, [setLoading]);
+    }, [setLoading]);
 
 
     const [designElems] = React.useState<DesignElemObj[]>([
@@ -75,12 +75,15 @@ export const Home: React.FC<HomeProps> = ({setLoading}) => {
     ]);
     return (
         <section className='home'>
-           
-                <article className='home__article'>
-                    <h2 className='home__article--subtitle'>Hey there! I'm Stephanie Melo</h2>
-                    <h1 className='home__article--title'>Product designer & Front Dev<br /> living in sunny Florida</h1>
-                </article>
-  
+
+            <article className='home__article'>
+                <div className='subtitle__container'>
+                    <h2 className='home__article--subtitle'>Hey there!</h2>
+                    <h2 className='home__article--subtitle'>I'm Stephanie Melo</h2>
+                </div>
+                <h1 className='home__article--title'>Product designer & Front Dev<br /> living in sunny Florida</h1>
+            </article>
+
 
 
             <article className='design__container'>
