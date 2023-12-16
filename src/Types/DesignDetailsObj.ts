@@ -1,8 +1,11 @@
 export type DesignDetailsObj = {
     id: number;
     title:string;
+    subtitle:string;
     role:string;
     tasks:string;
+    tasks2:string;
+    date:string;
     bannerImg:string;
     subtitle1:string;
     paragraph1:string;

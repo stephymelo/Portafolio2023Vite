@@ -1,65 +1,71 @@
-import * as React from 'react';
+import React from 'react';
 import { DesignDetailsObj } from '../../Types/DesignDetailsObj';
-import { useGetElemByIdParam } from '../../Utils/useGetElemByIdParams'
-
-
+import { useGetElemByIdParam } from '../../Utils/useGetElemByIdParams';
 
 interface DesignDetailsProps {
     list: DesignDetailsObj[];
-
 }
 
 const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
-    const elem = useGetElemByIdParam(list);
+    const selectedElement = useGetElemByIdParam(list);
 
+    // Early return if no element is selected
+    if (!selectedElement) return null;
 
-    //Spread operator
+    const {
+        title,
+        subtitle,
+        subtitle1,
+        bannerImg,
+        paragraph1,
+        role,
+        tasks,
+        tasks2,
+        date,
+        image1,
+        image2,
+    } = selectedElement;
 
-    if (!elem) return null;
-    const { title, subtitle1, bannerImg } = elem;
+    return (
+        <section className='design-details'>
+            <img className='design-details__banner' src={bannerImg} alt={title} />
+            <div>
+                <h4 className='design-details__subtitle'>{subtitle}</h4>
+                <h1 className='design-details__title'>{title}</h1>
+            </div>
 
+            <article className='design-details-article--1'>
+                <div className='design-details-article--1--container '>
+                    <h6 className='design-details-subtitle-mini'>Overview</h6>
+                    <p>{tasks}</p>
+                    <p>{tasks2}</p>
+                </div>
+                <div className='design-details-article--1--container2 container1'>
+                    <h6 className='design-details-subtitle-mini'>My Role</h6>
+                    <p>{role}</p>
+                    <p>{date}</p>
+                </div>
+            </article>
 
+            <article>
+                <h2 className='design-details__subtitle'>Background</h2>
+                <p className='design-details__description'>{paragraph1}</p>
+                <ul className='custom-list'>
+                    <li className="custom-list-item"><h4>fefe</h4><p>fere</p></li>
+                </ul>
+            </article>
 
+            <article className='design-details-article--2'>
+                <h2 className='design-details__subtitle'>{subtitle1}</h2>
+                <div className='design-details-images-container'>
+                    <img className='design-details-images' src={image1} alt='Investigation Image 1' />
+                    <img className='design-details-images' src={image2} alt='Investigation Image 2' />
+                </div>
+            </article>
 
-    return (<section className='project'>
-
-        <img className='project__banner' src={bannerImg}></img>
-        <h1 className='elem__title'>{title}</h1>
-        <article>
-            <h3 className='subtext'>Overview</h3>
-            <p>Rokt began a redesign of its entire B2B application with the vision of becoming the next biggest ads management platform, alongside Facebook Ads Manager and Google Ads.
-                <br />The goal of this particular project was to identify any usability issues with the beta release and determine the critical features to prioritise for the next iteration of the product.</p>
-            <h3 className='subtext'>Role</h3>
-            <p>UX/UI Designer</p>
-
-
-
-
-
-
-        </article>
-
-
-
-        <article>
-            <h2 className='project__subtitle'>Background</h2>
-            <p className='elem__description'>{subtitle1}</p>
-
-
-
-        </article>
-
-
-
-
-        <hr></hr>
-        <h2>More projects</h2>
-
-
-
-
-
-    </section>);
-}
+            <h2>More projects</h2>
+        </section>
+    );
+};
 
 export default DesignDetails;

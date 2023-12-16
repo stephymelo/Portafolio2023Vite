@@ -38,7 +38,7 @@ export const Links: React.FC<Link> = () => {
 
                     </li>
 
-                    <li className="item item--3">
+                    {/* <li className="item item--3">
                         <NavLink
                             className={({ isActive }) =>
                                 ["link--active", isActive ? "active" : null,]
@@ -46,7 +46,7 @@ export const Links: React.FC<Link> = () => {
                                     .join(" ")
                             }
                             end to="/design" > <span>Projects</span>  </NavLink>
-                    </li>
+                    </li> */}
 
                     <li className="item item--4">
                         <NavLink
