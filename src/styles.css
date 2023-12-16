@@ -62,7 +62,7 @@ h1, h3 {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 400;
   color: #313235;
 }
@@ -84,6 +84,10 @@ h4 {
   color: #6A7175;
 }
 
+h5 {
+  font-size: 24px;
+}
+
 a {
   font-size: 16px;
   color: inherit;
@@ -91,8 +95,9 @@ a {
 
 p {
   color: #313235;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
+  line-height: 120%;
 }
 
 span {
@@ -151,7 +156,7 @@ footer {
 .about__article--1 {
   display: flex;
   flex-direction: row;
-  margin-top: 10em;
+  margin-top: 15em;
   padding-left: 10em;
   padding-right: 10em;
   justify-content: space-between;
@@ -167,16 +172,61 @@ footer {
   flex-direction: column;
   gap: 24px;
 }
+.about__article--1 .paragraph__about {
+  font-size: 24px;
+}
+.about__article--1 .paragraph__about2 {
+  line-height: 150%;
+}
 .about__article--2 {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   width: 100%;
-  padding: 10em;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 8em;
+  padding-bottom: 5em;
+}
+.about__article--2 .title {
+  margin-bottom: 1.5em;
+  font-size: 40px;
+  font-family: "Space Grotesk", sans-serif;
 }
 .about__article--2 .listAbout__item {
-  margin-bottom: 70px;
+  margin-bottom: 5em;
 }
+.about .gallerySelfie {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-left: 10em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-right: 10em;
+}
+.about .gallerySelfie__img {
+  width: 30%;
+  margin: 5px;
+}
+.about .gallerySelfie__img:nth-child(3) {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.about .gallerySelfie__img:nth-child(2) {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.about .gallerySelfie__img:nth-child(4) {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about .gallerySelfie__img:nth-child(5) {
+  margin-top: -20px;
+  margin-bottom: 100px;
+}
+
 .home {
   width: 100%;
   display: flex;
@@ -207,6 +257,7 @@ footer {
 .home .design__container {
   padding-left: 10em;
   padding-right: 10em;
+  padding-bottom: 5em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -332,9 +383,34 @@ footer {
   }
 }
 .artwork {
-  margin-left: 20em;
   margin-top: 10em;
-  margin-right: 120px;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item,
+.stacked-images {
+  flex: 1 0 30%; /* Adjust as needed */
+  margin: 0 10px 10px 0;
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.photo {
+  width: 100%;
+  height: 50%; /* Each photo takes up 50% of the container's height */
+  -o-object-fit: cover;
+     object-fit: cover; /* Maintain aspect ratio without warping */
 }
 
 /* Container for the entire menu */
@@ -383,9 +459,12 @@ footer {
 }
 .contact {
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  align-items: center;
   justify-content: center;
+  gap: 2em;
 }
 .contact__list {
   display: flex;
@@ -399,9 +478,18 @@ footer {
 .contact__list .links .link {
   display: flex;
   align-items: center;
+  transition: color 0.3s ease;
+}
+.contact__list .links .link .link__type {
+  font-size: 14px;
 }
 .contact__list .links .link .icon {
   margin-right: 10px;
+}
+.contact__list .links .link:hover {
+  /* Add your hover styles here */
+  color: #7a7a9a; /* Change the color to your desired hover effect */
+  /* Add any other styles you want for the hover effect */
 }
 
 .menu-web {

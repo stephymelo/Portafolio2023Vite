@@ -62,15 +62,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
             path: '/design/2',
 
         },
-        {
-            id: 4,
-            tag: 'Frontend ReactTS',
-            title: 'NFT Web development',
-            description: 'Customers that buy and interact with the app can earn benefits and rewards',
-            image: bannerVerby,
-            path: '/design/2',
-
-        }
+        
 
     ]);
     return (
@@ -91,10 +83,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
                     return <DesignElem key={elem.id} {...elem} />;
                 })}
             </article>
-            {/* <footer className='contact'>
-                <h3 className='contact__title'>Let's get in touch</h3>
-
-            </footer> */}
+           
         </section>
     );
 }
