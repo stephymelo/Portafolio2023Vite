@@ -36,8 +36,15 @@
             width: 30%;
         }
     }
-
     &--2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+    }
+
+
+    &--3 {
         margin-left: -10em;
         padding-top: 5em;
         padding-left: 10em;
@@ -57,9 +64,13 @@
 
 .custom-list {
     list-style: none;
-    padding: 0;
+    margin-top: 0.5em;
+    margin-left:3em;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap:2em;
+   
+  
 }
 
 .custom-list-item {
@@ -67,16 +78,24 @@
     box-sizing: border-box;
     margin-bottom: 10px;
     padding-left: 20px; /* Adjust the left padding for spacing */
+    display: flex;
     position: relative;
+
+
+    .strong-text{
+        font-weight:700;
+        margin-right:0.4em;
+    }
+
 }
 
 .custom-list-item::before {
     content: "\2022"; /* Unicode character for a bullet point */
     color: $textPrimary; /* Adjust the color of the bullet point */
-    font-size: 30px; /* Adjust the size of the bullet point */
+    font-size: 2em; /* Adjust the size of the bullet point */
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     margin-right: 10px; /* Adjust the spacing between the bullet point and text */
 }

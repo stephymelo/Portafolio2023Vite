@@ -497,6 +497,11 @@ footer {
   width: 30%;
 }
 .design-details-article--2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.design-details-article--3 {
   margin-left: -10em;
   padding-top: 5em;
   padding-left: 10em;
@@ -515,9 +520,11 @@ footer {
 
 .custom-list {
   list-style: none;
-  padding: 0;
+  margin-top: 0.5em;
+  margin-left: 3em;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .custom-list-item {
@@ -525,16 +532,21 @@ footer {
   box-sizing: border-box;
   margin-bottom: 10px;
   padding-left: 20px; /* Adjust the left padding for spacing */
+  display: flex;
   position: relative;
+}
+.custom-list-item .strong-text {
+  font-weight: 700;
+  margin-right: 0.4em;
 }
 
 .custom-list-item::before {
   content: "•"; /* Unicode character for a bullet point */
   color: #313235; /* Adjust the color of the bullet point */
-  font-size: 30px; /* Adjust the size of the bullet point */
+  font-size: 2em; /* Adjust the size of the bullet point */
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   margin-right: 10px; /* Adjust the spacing between the bullet point and text */
 }
@@ -609,6 +621,11 @@ footer {
 
 .menu .logo {
   width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.menu .logo:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 780px) {

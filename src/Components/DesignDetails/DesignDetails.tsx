@@ -16,6 +16,9 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         title,
         subtitle,
         subtitle1,
+        subtitle2,
+        subtitle3,
+        subtitle4,
         bannerImg,
         paragraph1,
         role,
@@ -47,20 +50,38 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
                 </div>
             </article>
 
-            <article>
+            <article className='design-details-article--2'>
                 <h2 className='design-details__subtitle'>Background</h2>
                 <p className='design-details__description'>{paragraph1}</p>
                 <ul className='custom-list'>
-                    <li className="custom-list-item"><h4>fefe</h4><p>fere</p></li>
+                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
+                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
+                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
+                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
                 </ul>
             </article>
 
-            <article className='design-details-article--2'>
+            <article className='design-details-article--3'>
                 <h2 className='design-details__subtitle'>{subtitle1}</h2>
                 <div className='design-details-images-container'>
                     <img className='design-details-images' src={image1} alt='Investigation Image 1' />
                     <img className='design-details-images' src={image2} alt='Investigation Image 2' />
                 </div>
+            </article>
+
+            <article className='design-details-article--4'>
+                <h2 className='design-details__subtitle'>{subtitle2}</h2>
+                
+            </article>
+
+            <article className='design-details-article--5'>
+                <h2 className='design-details__subtitle'>{subtitle3}</h2>
+              
+            </article>
+
+            <article className='design-details-article--6'>
+                <h2 className='design-details__subtitle'>{subtitle4}</h2>
+              
             </article>
 
             <h2>More projects</h2>
