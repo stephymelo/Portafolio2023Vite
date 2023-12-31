@@ -84,6 +84,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
             <article className='design-details-article--4'>
                 <h2 className='design-details__subtitle'>{subtitle2}</h2>
+                <p>{paragraph2}</p>
                 <img className='design-details-images' src={image3} alt='Investigation Image 3'></img>
                 <img className='design-details-images' src={image4} alt='Investigation Image 4'></img>
 
@@ -91,6 +92,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
             <article className='design-details-article--5'>
                 <h2 className='design-details__subtitle'>{subtitle3}</h2>
+                <p>{paragraph3}</p>
                 <img className='design-details-images' src={image5} alt='Investigation Image 5'></img>
                 <img className='design-details-images' src={image6} alt='Investigation Image 6'></img>
 
