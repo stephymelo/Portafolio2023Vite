@@ -1,6 +1,8 @@
 import React from 'react';
 import { DesignDetailsObj } from '../../Types/DesignDetailsObj';
 import { useGetElemByIdParam } from '../../Utils/useGetElemByIdParams';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+
 
 interface DesignDetailsProps {
     list: DesignDetailsObj[];
@@ -9,8 +11,12 @@ interface DesignDetailsProps {
 const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
     const selectedElement = useGetElemByIdParam(list);
 
-    // Early return if no element is selected
     if (!selectedElement) return null;
+
+    const selectedIndex = list.findIndex((item) => item.id === selectedElement.id);
+    const previousItem = list[selectedIndex - 1];
+    const nextItem = list[selectedIndex + 1];
+
 
     const {
         title,
@@ -21,12 +27,19 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         subtitle4,
         bannerImg,
         paragraph1,
+        paragraph2,
+        paragraph3,
+        paragraph4,
         role,
         tasks,
         tasks2,
         date,
         image1,
         image2,
+        image3,
+        image4,
+        image5,
+        image6,
     } = selectedElement;
 
     return (
@@ -71,20 +84,50 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
             <article className='design-details-article--4'>
                 <h2 className='design-details__subtitle'>{subtitle2}</h2>
-                
+                <img className='design-details-images' src={image3} alt='Investigation Image 3'></img>
+                <img className='design-details-images' src={image4} alt='Investigation Image 4'></img>
+
             </article>
 
             <article className='design-details-article--5'>
                 <h2 className='design-details__subtitle'>{subtitle3}</h2>
-              
+                <img className='design-details-images' src={image5} alt='Investigation Image 5'></img>
+                <img className='design-details-images' src={image6} alt='Investigation Image 6'></img>
+
+
+
+
             </article>
 
             <article className='design-details-article--6'>
                 <h2 className='design-details__subtitle'>{subtitle4}</h2>
-              
+                <p className='design-details__description'>{paragraph4}</p>
+
             </article>
 
-            <h2>More projects</h2>
+            <div className="line"></div>
+            <h2 className="project-title" >More projects</h2>
+
+            <ul className="project-list">
+                {previousItem && (
+                    <li>
+                        <Link to={`/design/${previousItem.id}`}>
+                            <img src={previousItem.bannerThumbnail} alt="thumbnail" />
+
+                        </Link>
+                    </li>
+                )}
+
+                {nextItem && (
+                    <li>
+                        <Link to={`/design/${nextItem.id}`}>
+                            <img src={nextItem.bannerThumbnail} alt="thumbnail" />
+
+                        </Link>
+                    </li>
+                )}
+            </ul>
+
         </section>
     );
 };

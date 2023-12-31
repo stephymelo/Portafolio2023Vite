@@ -7,6 +7,7 @@ export type DesignDetailsObj = {
     tasks2:string;
     date:string;
     bannerImg:string;
+    bannerThumbnail:string;
     subtitle1:string;
     paragraph1:string;
     image1:string;
@@ -19,4 +20,6 @@ export type DesignDetailsObj = {
     subtitle4:string;
     paragraph4:string;
     image4:string;
+    image5:string,
+    image6:string,
 }

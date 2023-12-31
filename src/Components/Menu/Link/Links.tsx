@@ -71,6 +71,17 @@ export const Links: React.FC<Link> = () => {
             <nav className={`menu-mobile ${state ? 'active' : ''}`}>
 
                 <ul className="list">
+                    <li className="item item--1">
+                        <NavLink
+                            className={({ isActive }) =>
+                                ["link--active", isActive ? "active" : null,]
+                                    .filter(Boolean)
+                                    .join(" ")
+                            }
+                            end to="/home" > <span>Home</span> </NavLink>
+
+                    </li>
+
                     <li className="item item--2">
                         <NavLink
                             className={({ isActive }) =>
@@ -78,21 +89,10 @@ export const Links: React.FC<Link> = () => {
                                     .filter(Boolean)
                                     .join(" ")
                             }
-                            end to="/about" > <span>About</span> </NavLink>
-
+                            end to="/about" > <span>About</span>  </NavLink>
                     </li>
 
                     <li className="item item--3">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/design" > <span>Projects</span>  </NavLink>
-                    </li>
-
-                    <li className="item item--4">
                         <NavLink
                             className={({ isActive }) =>
                                 ["link--active", isActive ? "active" : null,]
