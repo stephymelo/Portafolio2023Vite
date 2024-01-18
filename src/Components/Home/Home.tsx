@@ -74,11 +74,12 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
                     <h2 className='home__article--subtitle'>I'm Stephanie Melo</h2>
                 </div>
                 <h1 className='home__article--title'>Product designer & Front Dev<br /> living in sunny Florida</h1>
+                <a href="#section-2">bajar</a>
             </article>
 
 
 
-            <article className='design__container'>
+            <article id='section-2' className='design__container'>
                 {designElems.map((elem) => {
                     return <DesignElem key={elem.id} {...elem} />;
                 })}

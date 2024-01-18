@@ -9,15 +9,13 @@
   }
 
   .image__container {
-    width: 80%;
-    
-
-    overflow: hidden;
+    overflow: hidden;  
   }
+
 
   .image__wrapper {
     border-radius: 12px;
-    overflow: hidden; 
+    overflow: hidden;
   }
 
   .image {
@@ -43,5 +41,14 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
+  .elem{
+    flex-direction: column;
+    .image__container {
+      width: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
 }

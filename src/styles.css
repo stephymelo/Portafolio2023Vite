@@ -406,22 +406,22 @@ footer {
     gap: 4px;
   }
   .home .design__container {
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10em;
+    gap: 4em;
   }
   .home .design__container .elem:nth-child(1), .home .design__container .elem:nth-child(3), .home .design__container .elem:nth-child(5) {
     align-self: flex-start;
   }
   .home .design__container .elem:nth-child(2), .home .design__container .elem:nth-child(4) {
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-self: flex-end;
   }
   .home .design__container .elem:nth-child(2) .elem__text, .home .design__container .elem:nth-child(4) .elem__text {
-    text-align: right;
+    text-align: left;
   }
 }
 .design {
@@ -440,7 +440,6 @@ footer {
   cursor: pointer;
 }
 .elem .image__container {
-  width: 80%;
   overflow: hidden;
 }
 .elem .image__wrapper {
@@ -462,6 +461,17 @@ footer {
   flex-direction: column;
   gap: 16px;
   text-align: left;
+}
+@media screen and (max-width: 780px) {
+  .elem {
+    flex-direction: column;
+  }
+  .elem .image__container {
+    width: 100%;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 .design-details {
   margin-top: 10em;
@@ -858,4 +868,8 @@ footer {
   color: #2c3e50;
   margin-top: 60px;
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=styles.css.map */
