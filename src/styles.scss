@@ -27,7 +27,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "GT Americana";
+    src: url("/src/assets/Fonts/GTAmericana.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 #app {

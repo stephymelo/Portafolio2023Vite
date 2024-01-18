@@ -12,13 +12,15 @@
         height: 80vh;
 
         &--subtitle {
-            color: $lightpurple;
+            color: $textTerciary;
             font-weight: 600;
+            font-size: 18px;
         }
 
         &--title {
             margin-top: 0.3em;
             line-height: 160%;
+            width:80%;
         }
 
         .subtitle__container{
@@ -74,7 +76,6 @@
             height: 80vh;
     
             &--subtitle {
-                color: $lightpurple;
                 font-weight: 600;
             }
     

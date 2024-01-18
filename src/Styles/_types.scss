@@ -32,6 +32,7 @@ h5{
 h6{
     font-size:18px;
     color: $textSecondary;
+    letter-spacing: 0.1em;
 }
 a{
     font-size:16px;
@@ -45,7 +46,7 @@ p{
 }
 
 span{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 700px) {

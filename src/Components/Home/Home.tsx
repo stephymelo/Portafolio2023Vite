@@ -70,10 +70,9 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 
             <article className='home__article'>
                 <div className='subtitle__container'>
-                    <h2 className='home__article--subtitle'>Hey there!</h2>
-                    <h2 className='home__article--subtitle'>I'm Stephanie Melo</h2>
+                    <h6 className='home__article--subtitle'>HEY HOLA HELLO</h6>
                 </div>
-                <h1 className='home__article--title'>Product designer & Front Dev<br /> living in sunny Florida</h1>
+                <h1 className='home__article--title'>Stephanie is a Product Designer<br /> living in sunny Florida</h1>
             </article>
 
 

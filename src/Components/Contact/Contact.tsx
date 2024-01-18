@@ -6,7 +6,8 @@ interface Contact {
 export const Contact: React.FC<Contact> = () => {
     return (
         <section className='contact'>
-            <h5>Let's connect ☺</h5>
+            <div className='contact__title'> <h5>Let's connect</h5> <h5 className='iconsito'>☺ </h5></div>
+           
             <ul className='contact__list'>
                 <li className='links'>
                     <a className='link' href='https://www.linkedin.com/in/stephanie-melo-henao' target="_blank">
