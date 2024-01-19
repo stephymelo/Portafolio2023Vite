@@ -73,6 +73,8 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
                     <h6 className='home__article--subtitle'>HEY HOLA HELLO</h6>
                 </div>
                 <h1 className='home__article--title'>Stephanie is a Product Designer<br /> living in sunny Florida</h1>
+                <a href="#section-2">bajar</a>
+                
             </article>
 
 
