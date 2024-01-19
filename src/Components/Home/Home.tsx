@@ -77,7 +77,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 
 
 
-            <article className='design__container'>
+            <article id='section-2' className='design__container'>
                 {designElems.map((elem) => {
                     return <DesignElem key={elem.id} {...elem} />;
                 })}
