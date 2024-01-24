@@ -5,6 +5,14 @@ export type DesignDetailsObj = {
     role:string;
     tasks:string;
     tasks2:string;
+    listTitle1:string;
+    listTitle2:string;
+    listTitle3:string;
+    listTitle4:string;
+    list1:string;
+    list2:string;
+    list3:string;
+    list4:string;
     date:string;
     bannerImg:string;
     bannerThumbnail:string;

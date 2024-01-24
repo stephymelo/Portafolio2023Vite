@@ -25,6 +25,14 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         subtitle2,
         subtitle3,
         subtitle4,
+        listTitle1,
+        list1,
+        listTitle2,
+        list2,
+        listTitle3,
+        list3,
+        listTitle4,
+        list4,
         bannerImg,
         paragraph1,
         paragraph2,
@@ -67,10 +75,10 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
                 <h2 className='design-details__subtitle'>Background</h2>
                 <p className='design-details__description'>{paragraph1}</p>
                 <ul className='custom-list'>
-                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
-                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
-                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
-                    <li className="custom-list-item"><p className='strong-text'>Team first</p><p>As a team we did this</p></li>
+                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle1}</p><p className='list-info'>{list1}</p></div></li>
+                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle2}</p><p  className='list-info'>{list2}</p></div></li>
+                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle3}</p><p className='list-info'>{list3}</p></div></li>
+                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle4}</p><p className='list-info'>{list4}</p></div></li>
                 </ul>
             </article>
 
@@ -85,17 +93,20 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
             <article className='design-details-article--4'>
                 <h2 className='design-details__subtitle'>{subtitle2}</h2>
                 <p>{paragraph2}</p>
+                <div className='design-details-images-container'>
                 <img className='design-details-images' src={image3} alt='Investigation Image 3'></img>
                 <img className='design-details-images' src={image4} alt='Investigation Image 4'></img>
+                </div>
 
             </article>
 
             <article className='design-details-article--5'>
                 <h2 className='design-details__subtitle'>{subtitle3}</h2>
                 <p>{paragraph3}</p>
+                <div className='design-details-images-container'>
                 <img className='design-details-images' src={image5} alt='Investigation Image 5'></img>
                 <img className='design-details-images' src={image6} alt='Investigation Image 6'></img>
-
+                </div>
 
 
 
