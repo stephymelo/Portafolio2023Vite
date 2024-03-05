@@ -30,7 +30,7 @@ import userflowFK from './assets/Images/FinkargoProject/userFK.png';
 import roadmapFK from './assets/Images/FinkargoProject/planFK.png';
 import designBannerFK from './assets/Images/FinkargoProject/designBanner.png';
 import designSystemFK from './assets/Images/FinkargoProject/designSystem.png';
-import formsFK from './assets/Images/FinkargoProject/Base.png';
+import formsFK from './assets/Images/FinkargoProject/GraphicResourcesFK.png';
 import panelFK from './assets/Images/FinkargoProject/PanelFinkargo.png';
 
 //Eficacia
