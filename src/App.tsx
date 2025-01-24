@@ -12,6 +12,12 @@ import { Contact } from './Components/Contact/Contact';
 
 
 //BannersAndImages
+
+//NewImageLabs
+
+
+
+
 //Close
 import bannerClose from './assets/Images/CloseProject/CloseBannerDesign.png';
 import bannerCloseThumb from './assets/Images/CloseProject/BannerThumbnailClose.png';
@@ -75,33 +81,33 @@ function App() {
     {
 
       id: 0,
-      title: 'Close Web App',
-      subtitle:'UX UI Case Study',
-      role: 'UX researcher, discovery, investigation, wireframing, testing ',
-      tasks: 'Close began as discovery for alternative ways to communicate and interact within a digital classroom due to the COVID-19 pandemic in 2020',
-      tasks2: 'The goal of the project was to engage students in a digital classroom and aument their social interaction with their professors and classmates',
-      date:'August 2020',
-      listTitle1:'In depth investigation',
+      title: 'New Image Labs',
+      subtitle:'E-commerce websites built with Shopify',
+      role: 'UX/UI, Frontend Developer, Shopify Developer ',
+      tasks: 'I was in charge of designing, developing and managing 2 e-commerce websites for the company, where they sell products for hair care and hair replacement.  ',
+      tasks2: 'The goal was to impulse their brands in the digital medium to B2B and B2C customers, creating different userflows and experiences depending on the type of customer',
+      date:'April 2024-Present',
+      listTitle1:'Researching and Designing',
       list1:'To have a clear understanding of concepts, we read academic papers, articles and interviewed teachers specialized in the topic',
-      listTitle2:'A robust documentation',
-      list2:'This helped us have the research background for the project and documentated the design process including the results of the vali',
-      listTitle3:'Implemented a design process',
-      list3:'listed',
+      listTitle2:'Developing with Shopify',
+      list2:'Utilizing my knowledge in Frontend Development (React, HTML, JS, CSS) and learning how to use Shopify Liquid, I was able to create unique userflows for both types of customers, connect with e-mail marketing certain user actions when triggered on the website and create customized designs"',
+      listTitle3:'Connecting website with Amazon and Social Media',
+      list3:'With E-commerce it is vital to have the digital landscape interconnected so potential clients can find the products easily, information, and move them to the decision to buy',
       listTitle4:'Innovative funcionalities',
       list4:'We integrated functionalities that would help the student concentrate in class and also have a social interaction similar to in-person classes.',
       bannerImg: bannerClose,
       bannerThumbnail: bannerCloseThumb,
-      subtitle1: 'Investigation',
-      paragraph1: 'For a joint project in my classes at Icesi University – Human Computer Interaction and Investigation in Design – I teamed up with fellow designers. Our project was to tackle a real-world issue by exploring, investigating, and proposing a digital solution. Our focus landed on a prevalent challenge: the shift from physical classrooms to virtual ones was impacting interpersonal relationships among students. The lack of traditional face-to-face interactions was something that we had to solve and we were determined to find a way to promote social connections and active participation in this new virtual classroom landscape. It was a puzzle we eagerly dove into, seeking to bridge the gap between digital learning and the personal touch of traditional classrooms.',
+      subtitle1: 'Investigation and Userflows',
+      paragraph1: 'Before tackling any project, I always find the time to investigate internally and externally to understand the product, the necessities, the stakeholders goals and the competition in the market. Based on this research, that I keep documented in Notion, I can create userflows, connecting digital and physical touchpoints, ensuring that everything needed for Sales and Warehouse works seamlessly, while always working to better the clients experience.',
       image1: userflowClose,
-      subtitle2: 'Wireframing and Validating',
-      paragraph2: 'Designer',
+      subtitle2: 'The process of Designing',
+      paragraph2: 'Due to the nature of the company, testing was limited to internal. When creating a new page for a userflow, or promotion of a new sale, I would wireframe what was needed, later designing with the color palette and branding. If needed, I would also help take and edit the photos needed for the design I proposed. ',
       image2: userClose,
-      subtitle3: 'Final designs',
-      paragraph3: 'Designer',
+      subtitle3: 'Implementing the Design',
+      paragraph3: 'Since Shopify utilizes its own language Liquid and HTML, JS and CSS, I would use this to create new the design approved, ensuring that it was functional and responsive. If needed, I would also create new Componentes to add to the Theme of the project. If needed I would make the right connections with Flow or third party apps and always test before publishing to the live website.',
       image3: wireframes,
       subtitle4: 'Results and key takeways',
-      paragraph4: 'Exploring new classroom features like markers and channels positively impacted students emotional well-being, fostering engagement and improved communication. However, challenges in using these tools revealed design flaws, particularly in visibility and recognition. Recommendations include clearer dashboard design, icon-based information condensation, and differentiation in the logbook. While users appreciated the prototypes benefits, improvements in design and functionality are necessary for enhanced usability and experience.',
+      paragraph4: 'Being able to bring to life my designs and userflows, was quite fun utilizing Shopify and learning more about it along the way. Working with the marketing team and sales was also very important and allowed me to create better experiences for clients on the website. I also got to give my input to the promotions, social media posts and e-mail marketing, integrating touchpoints to lead to the website and increase online sales.',
       image4: journeyclose,
       image5:finalsclose,
       image6: mockupfinal
@@ -142,6 +148,42 @@ function App() {
 
     },
     {
+
+      id: 3,
+      title: 'Close Web App',
+      subtitle:'UX UI Case Study',
+      role: 'UX researcher, discovery, investigation, wireframing, testing ',
+      tasks: 'Close began as discovery for alternative ways to communicate and interact within a digital classroom due to the COVID-19 pandemic in 2020',
+      tasks2: 'The goal of the project was to engage students in a digital classroom and aument their social interaction with their professors and classmates',
+      date:'August 2020',
+      listTitle1:'In depth investigation',
+      list1:'To have a clear understanding of concepts, we read academic papers, articles and interviewed teachers specialized in the topic',
+      listTitle2:'A robust documentation',
+      list2:'This helped us have the research background for the project and documentated the design process including the results of our validations',
+      listTitle3:'Implemented a design process',
+      list3:'This allowed us to have the cycle of design, testing, going back to the drawing board, designing, and so forth, to finally create our final prototype',
+      listTitle4:'Innovative funcionalities',
+      list4:'We integrated functionalities that would help the student concentrate in class and also have a social interaction similar to in-person classes.',
+      bannerImg: bannerClose,
+      bannerThumbnail: bannerCloseThumb,
+      subtitle1: 'Investigation',
+      paragraph1: 'For a joint project in my classes at Icesi University – Human Computer Interaction and Investigation in Design – I teamed up with fellow designers. Our project was to tackle a real-world issue by exploring, investigating, and proposing a digital solution. Our focus landed on a prevalent challenge: the shift from physical classrooms to virtual ones was impacting interpersonal relationships among students. The lack of traditional face-to-face interactions was something that we had to solve and we were determined to find a way to promote social connections and active participation in this new virtual classroom landscape. It was a puzzle we eagerly dove into, seeking to bridge the gap between digital learning and the personal touch of traditional classrooms.',
+      image1: userflowClose,
+      subtitle2: 'Wireframing and Validating',
+      paragraph2: '',
+      image2: userClose,
+      subtitle3: 'Final designs',
+      paragraph3: '',
+      image3: wireframes,
+      subtitle4: 'Results and key takeways',
+      paragraph4: 'Exploring new classroom features like markers and channels positively impacted students emotional well-being, fostering engagement and improved communication. However, challenges in using these tools revealed design flaws, particularly in visibility and recognition. Recommendations include clearer dashboard design, icon-based information condensation, and differentiation in the logbook. While users appreciated the prototypes benefits, improvements in design and functionality are necessary for enhanced usability and experience.',
+      image4: journeyclose,
+      image5:finalsclose,
+      image6: mockupfinal
+
+    },
+    
+    {
       id: 2,
       title: 'Efipuntos cupon and rewards app',
       subtitle:'Product design',
@@ -176,7 +218,7 @@ function App() {
 
     },
     {
-      id: 3,
+      id: 4,
       title: 'Verby educational tool',
       subtitle:'Graduate project',
       role: 'UX Research, Product design, Frontend Developer',

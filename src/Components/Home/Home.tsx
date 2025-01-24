@@ -28,11 +28,11 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
     const [designElems] = React.useState<DesignElemObj[]>([
         {
             id: 0,
-            tag: 'UX/UI Case Study',
-            title: 'Close Case Study ',
-            description: 'Integrating social interactions in the digital medium for better communication and user motivation',
-            image: bannerClose,
-            path: '/design/1',
+            tag: 'UX/UI Design',
+            title: 'E-commerce with Shopify, Amazon & Social Media',
+            description: 'Building and connecting Shopify website for hair care and wigs aligning with marketing ',
+            image: bannerEficacia,
+            path: '/design/0',
 
         },
         {
@@ -41,7 +41,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
             title: 'Redesign for B2B Fintech',
             description: 'User research and mapping flow, along with creating the design system',
             image: bannerFinkargo,
-            path: '/design/2',
+            path: '/design/1',
 
         },
         {
@@ -55,11 +55,20 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
         },
         {
             id: 3,
+            tag: 'UX/UI Case Study',
+            title: 'Close Case Study ',
+            description: 'Integrating social interactions in the digital medium for better communication and user motivation',
+            image: bannerClose,
+            path: '/design/3',
+
+        },
+        {
+            id: 4,
             tag: 'Graduate project',
             title: 'Verby educational tool',
             description: 'amification theories and micro-learning for a fun and easy way to learn terminology',
             image: bannerVerby,
-            path: '/design/2',
+            path: '/design/4',
 
         },
 
