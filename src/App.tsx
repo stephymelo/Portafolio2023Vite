@@ -14,6 +14,8 @@ import { Contact } from './Components/Contact/Contact';
 //BannersAndImages
 
 //NewImageLabs
+import bannerNil from './assets/Images/NILProject/BannerDesignNIL.png';
+import bannerNilThumb from './assets/Images/NILProject/BannerThumbnailNIL.png';
 
 
 
@@ -84,30 +86,30 @@ function App() {
       title: 'New Image Labs',
       subtitle:'E-commerce websites built with Shopify',
       role: 'UX/UI, Frontend Developer, Shopify Developer ',
-      tasks: 'I was in charge of designing, developing and managing 2 e-commerce websites for the company, where they sell products for hair care and hair replacement.  ',
-      tasks2: 'The goal was to impulse their brands in the digital medium to B2B and B2C customers, creating different userflows and experiences depending on the type of customer',
+      tasks: 'I was responsible for designing, developing, and leading a team of developers while also actively contributing to the development of two e-commerce websites for the company, which specialize in hair care and hair replacement products. ',
+      tasks2: 'The goal was to elevate their brands in the digital space, catering to both B2B and B2C customers with distinct user experiences. One brand targeted individuals and stylists interested in hair care, while the other focused on salons and older clients seeking hair replacement solutions.',
       date:'April 2024-Present',
       listTitle1:'Researching and Designing',
-      list1:'To have a clear understanding of concepts, we read academic papers, articles and interviewed teachers specialized in the topic',
+      list1:'Conducted in-depth competitor analysis and collaborated with various departments—including sales, marketing, and warehouse teams—to understand internal workflows. This allowed me to identify opportunities for e-commerce integration and automation, ensuring a seamless connection between online operations and internal processes.',
       listTitle2:'Developing with Shopify',
-      list2:'Utilizing my knowledge in Frontend Development (React, HTML, JS, CSS) and learning how to use Shopify Liquid, I was able to create unique userflows for both types of customers, connect with e-mail marketing certain user actions when triggered on the website and create customized designs"',
-      listTitle3:'Connecting website with Amazon and Social Media',
-      list3:'With E-commerce it is vital to have the digital landscape interconnected so potential clients can find the products easily, information, and move them to the decision to buy',
-      listTitle4:'Innovative funcionalities',
-      list4:'We integrated functionalities that would help the student concentrate in class and also have a social interaction similar to in-person classes.',
-      bannerImg: bannerClose,
-      bannerThumbnail: bannerCloseThumb,
+      list2:'Utilized frontend skills (React, HTML, JS, CSS) while mastering Shopify Liquid to create unique user flows, customized interfaces and trigger automations .',
+      listTitle3:'E-commerce Integrations',
+      list3:'Connected the website with Amazon and social media platforms, ensuring a seamless digital presence to drive discovery, engagement, and conversions.',
+      listTitle4:'Innovative Features',
+      list4:'Developed functionalities to support both B2B and B2C operations, seamlessly integrating online sales with the sales team. This ensured a smooth workflow for order processing, client management, and communication between digital and physical sales channels.',
+      bannerImg: bannerNil,
+      bannerThumbnail: bannerNilThumb,
       subtitle1: 'Investigation and Userflows',
-      paragraph1: 'Before tackling any project, I always find the time to investigate internally and externally to understand the product, the necessities, the stakeholders goals and the competition in the market. Based on this research, that I keep documented in Notion, I can create userflows, connecting digital and physical touchpoints, ensuring that everything needed for Sales and Warehouse works seamlessly, while always working to better the clients experience.',
+      paragraph1: 'Before development, I conducted thorough internal and external research to understand the product, business goals, and market competition. Since the company caters to both B2B (salons and cosmetologists) and B2C (retail customers), I mapped out distinct user flows tailored to each segment. Using Notion, I documented key insights and designed workflows that connected digital and physical touchpoints, ensuring seamless integration between sales, warehouse operations, and website sales. Additionally, I continuously sought to enhance the overall user experience by researching and strategizing automation solutions, setting a clear plan for developers to implement through SAP, third-party apps, and custom coding to streamline processes and improve efficiency.',
       image1: userflowClose,
       subtitle2: 'The process of Designing',
-      paragraph2: 'Due to the nature of the company, testing was limited to internal. When creating a new page for a userflow, or promotion of a new sale, I would wireframe what was needed, later designing with the color palette and branding. If needed, I would also help take and edit the photos needed for the design I proposed. ',
+      paragraph2: 'Due to the company’s structure, user testing was conducted internally. When designing new pages or promotional content, I started with wireframes in Figma, followed by high-fidelity designs that aligned with the brand’s color palette and identity. Additionally, I assisted in aligning marketing materials and email marketing designs to ensure brand consistency across all digital channels. I also contributed by taking and editing product photos with the marketing team. ',
       image2: userClose,
       subtitle3: 'Implementing the Design',
-      paragraph3: 'Since Shopify utilizes its own language Liquid and HTML, JS and CSS, I would use this to create new the design approved, ensuring that it was functional and responsive. If needed, I would also create new Componentes to add to the Theme of the project. If needed I would make the right connections with Flow or third party apps and always test before publishing to the live website.',
+      paragraph3: 'Shopify’s unique templating language, Liquid, along with HTML, JavaScript, and CSS, allowed me to develop fully responsive and functional designs. I built custom components with Liquid to enhance the theme and meet the company’s needs for both B2B and B2C commerce within a single platform. Additionally, I integrated automations using Shopify Flow and third-party apps, enabling seamless communication between customers and internal users to streamline workflows and improve operational efficiency.',
       image3: wireframes,
       subtitle4: 'Results and key takeways',
-      paragraph4: 'Being able to bring to life my designs and userflows, was quite fun utilizing Shopify and learning more about it along the way. Working with the marketing team and sales was also very important and allowed me to create better experiences for clients on the website. I also got to give my input to the promotions, social media posts and e-mail marketing, integrating touchpoints to lead to the website and increase online sales.',
+      paragraph4: 'Bringing my designs and user flows to life with Shopify was an exciting and rewarding experience. Collaborating with the marketing and sales teams helped refine customer journeys and improve overall engagement. Additionally, I contributed ideas for promotions, social media strategies, and email marketing campaigns, aligning all touchpoints to drive traffic and increase online sales.Beyond design and development, I also optimized the website’s SEO and Google ranking by refining product descriptions, enhancing images, and implementing SEO best practices. Using tools like Google Analytics and Semrush, I continuously monitored performance metrics, identifying opportunities to improve visibility and drive organic traffic.',
       image4: journeyclose,
       image5:finalsclose,
       image6: mockupfinal
@@ -120,7 +122,7 @@ function App() {
       role: 'Product design, User research, Design System',
       tasks: 'For a fintech startup that focuses on international commerce, after receiving a re-branding, a design system and re-design were needed for the platform, where clients can track, finance and analyze their imports.',
       tasks2: 'I worked with a team of two other designers to create the user experience and connect all their services on the platform, creating the design system and delivering final designs.',
-      date:'July 2023 - Present',
+      date:'July 2023 - April 2024',
       listTitle1:'Establishing a design system',
       list1:'This helped the Developer and Product teams have a consisten look and feel across different products.',
       listTitle2:'Improved usability and navigation',
