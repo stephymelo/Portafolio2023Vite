@@ -17,14 +17,14 @@ export const About: React.FC<About> = () => {
 
             <article className='about__article--1'>
                 <article className='content'>
-                    <h1 className='title'>A bit about myself</h1>
+                    <h1 className='title'></h1>
                     <div className='paragraph'>
-                        <p className='paragraph__about'>Hola! Thank's for passing by. I'm Stephanie Melo, an artist, designer and developer, focusing on products to improve people's lives - I love to discover and explore each user's world.</p>
-                        <p className='paragraph__about2'>As a big-picture thinker and someone that loves to be a part of the whole design process. In my spare time I continue to study with courses and workshops, applying these to my projects. I am also seeking to do a master's in Human Centered Design in the near future. <br /> <br />I am currently looking for new opportunities and broaden my scope to different sectors and face new challenges</p>
+                        <p className='paragraph__about'>Hola! Thank's for passing by. I'm Stephanie Melo, an artist, designer and developer from SoFlo.</p>
+                        <p className='paragraph__about2'>As a big-picture thinker and someone that loves to be a part of the whole design process. In my spare time I continue to study with courses and documentation on design tendencies and platforms <br /> <br />I am currently looking for new opportunities and face new challenges</p>
                     </div>
                     <div className='links'>
                         <h6 className='linktitle'>LINKS</h6>
-                        <a  href="https://drive.google.com/file/d/1l2VPKWpgFK7Oy41L-Ri7irNRrsEsAiJE/view?usp=drive_link"><p className='link'>Resume</p></a>
+                        <a  href="https://drive.google.com/file/d/1i9m7NlXkbt4tM3vP7IGF3BIquJSDz4cz/view?usp=drive_link"><p className='link'>Resume</p></a>
                         <a href="https://www.linkedin.com/in/stephanie-melo-henao/"><p className='link'>Linkedin</p></a>
                     </div>
                 </article>
