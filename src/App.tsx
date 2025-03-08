@@ -16,6 +16,12 @@ import { Contact } from './Components/Contact/Contact';
 //NewImageLabs
 import bannerNil from './assets/Images/NILProject/BannerDesignNIL.png';
 import bannerNilThumb from './assets/Images/NILProject/BannerThumbnailNIL.png';
+import userProgen from './assets/Images/NILProject/userpersonas-progen.png';
+import researchProgen from './assets/Images/NILProject/research-progen.png';
+import wireframeProgen from './assets/Images/NILProject/wireframe.png';
+import sitemapProgen from './assets/Images/NILProject/sitemap.png';
+import pagesProgen from './assets/Images/NILProject/progen-pages.png';
+import homeProgen from './assets/Images/NILProject/home.png';
 
 
 
@@ -101,18 +107,23 @@ function App() {
       bannerThumbnail: bannerNilThumb,
       subtitle1: 'Investigation and Userflows',
       paragraph1: 'Before development, I conducted thorough internal and external research to understand the product, business goals, and market competition. Since the company caters to both B2B (salons and cosmetologists) and B2C (retail customers), I mapped out distinct user flows tailored to each segment. Using Notion, I documented key insights and designed workflows that connected digital and physical touchpoints, ensuring seamless integration between sales, warehouse operations, and website sales. Additionally, I continuously sought to enhance the overall user experience by researching and strategizing automation solutions, setting a clear plan for developers to implement through SAP, third-party apps, and custom coding to streamline processes and improve efficiency.',
-      image1: userflowClose,
+      image1: researchProgen,
       subtitle2: 'The process of Designing',
       paragraph2: 'Due to the company’s structure, user testing was conducted internally. When designing new pages or promotional content, I started with wireframes in Figma, followed by high-fidelity designs that aligned with the brand’s color palette and identity. Additionally, I assisted in aligning marketing materials and email marketing designs to ensure brand consistency across all digital channels. I also contributed by taking and editing product photos with the marketing team. ',
-      image2: userClose,
-      subtitle3: 'Implementing the Design',
-      paragraph3: 'Shopify’s unique templating language, Liquid, along with HTML, JavaScript, and CSS, allowed me to develop fully responsive and functional designs. I built custom components with Liquid to enhance the theme and meet the company’s needs for both B2B and B2C commerce within a single platform. Additionally, I integrated automations using Shopify Flow and third-party apps, enabling seamless communication between customers and internal users to streamline workflows and improve operational efficiency.',
-      image3: wireframes,
+      image2: userProgen,
+      subtitle3: 'Implementing and Iterating',
+      paragraph3: `Shopify’s unique templating language, Liquid, combined with HTML, JavaScript, and CSS, enabled me to develop fully responsive and functional designs.
+      I built custom components with Liquid to enhance the theme, meeting the company’s needs for both B2B and B2C commerce within a single platform.
+      Additionally, I integrated automations using Shopify Flow and third-party apps, ensuring seamless communication between customers and internal users to streamline workflows and improve operational efficiency.
+      \n
+      I continuously refine the design, incorporating new functionalities based on insights from Shopify resources, business requirements, and ongoing research.
+      Leveraging SEO data from Google Analytics and Semrush, user behavior analysis with Hotjar, and competitor research, I iteratively enhance the website to optimize performance and user experience.`,
+            image3: wireframeProgen,
       subtitle4: 'Results and key takeways',
       paragraph4: 'Bringing my designs and user flows to life with Shopify was an exciting and rewarding experience. Collaborating with the marketing and sales teams helped refine customer journeys and improve overall engagement. Additionally, I contributed ideas for promotions, social media strategies, and email marketing campaigns, aligning all touchpoints to drive traffic and increase online sales.Beyond design and development, I also optimized the website’s SEO and Google ranking by refining product descriptions, enhancing images, and implementing SEO best practices. Using tools like Google Analytics and Semrush, I continuously monitored performance metrics, identifying opportunities to improve visibility and drive organic traffic.',
-      image4: journeyclose,
-      image5:finalsclose,
-      image6: mockupfinal
+      image4: sitemapProgen,
+      image5:pagesProgen,
+      image6: homeProgen,
 
     },
     {

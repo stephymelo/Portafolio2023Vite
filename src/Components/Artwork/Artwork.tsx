@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+// Import images
 import sage from '../../assets/Images/ArtGallery/sage.png';
 import space from '../../assets/Images/ArtGallery/space.png';
 import girl1 from '../../assets/Images/ArtGallery/Alice.jpg';
@@ -11,109 +13,88 @@ import shirt from '../../assets/Images/ArtGallery/blackVersion2.jpg';
 import haiku from '../../assets/Images/ArtGallery/Haikus.png';
 import portrait from '../../assets/Images/ArtGallery/portrait.jpg';
 import bookmark from '../../assets/Images/ArtGallery/Artwork.png';
+import progen1 from '../../assets/Images/ArtGallery/progen-reel.png';
+import progen2 from '../../assets/Images/ArtGallery/progen-post.png';
 
+// Define a type for the artwork objects
+interface ArtworkItem {
+  src: string;
+  alt: string;
+  caption: string;
+}
 
-interface Artwork { }
+const designImages: ArtworkItem[] = [
+  { src: shirt, alt: "Shirt Design", caption: "Shirt design for student group" },
+  { src: progen1, alt: "Reel", caption: "Reel Ad for Black Friday" },
+  { src: progen2, alt: "Post", caption: "Reel Ad for Valentine'sn" },
 
-export const Artwork: React.FC<Artwork> = () => {
+ 
+];
+
+// Artwork images array
+const artworkImages: ArtworkItem[] = [
+  { src: space, alt: "Space artwork", caption: "Space artwork" },
+  { src: inked, alt: "Design", caption: "Inked design" },
+  { src: haiku, alt: "Haiku page", caption: "Haiku page for fanzine" },
+  { src: fairy, alt: "Woodland fairy art", caption: "Woodland fairy art" },
+  { src: raven, alt: "Raven artwork", caption: "Raven artwork" },
+  { src: sage, alt: "Valorant character", caption: "Valorant character portrait" },
+  { src: portrait, alt: "Digital portrait", caption: "Digital portrait" },
+  { src: bookmark, alt: "Bookmark designs", caption: "Bookmark designs" },
+  { src: girl1, alt: "Alice artwork", caption: "Alice artwork" },
+  { src: sexura, alt: "Durex app design", caption: "Icon and designs for Durex App" },
+  { src: final, alt: "Post production work", caption: "Post production work" },
+];
+
+// Group images into 4 columns dynamically
+const createColumns = (images: ArtworkItem[]): ArtworkItem[][] => {
+  const columns: ArtworkItem[][] = [[], [], [], []];
+  images.forEach((image, index) => {
+    columns[index % 4].push(image);
+  });
+  return columns;
+};
+
+export const Artwork: React.FC = () => {
+  const designColumns = createColumns(designImages);
+  const artworkColumns = createColumns(artworkImages);
+
   return (
     <section className='artwork'>
-      <h1 className='title'>Gallery</h1>
-      {/* <h2>Graphic design and artwork</h2> */}
-
+      {/* Branding Design Gallery */}
+      <h1 className='title'>Designs</h1>
+      <p className='subtitle-artwork'>These include works I created for email marketing, social media, and printables</p>
       <section className="gallery">
-        <article className="gallery__column">
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={space} alt="Space artwork" className="gallery__image" />
-              <figcaption className="gallery__caption">Space artwork</figcaption>
-            </figure>
-          </div>
+        {designColumns.map((column, colIndex) => (
+          <article key={colIndex} className="gallery__column">
+            {column.map((image, index) => (
+              <div key={index} className="gallery__link">
+                <figure className="gallery__thumb">
+                  <img src={image.src} alt={image.alt} className="gallery__image" />
+                  <figcaption className="gallery__caption">{image.caption}</figcaption>
+                </figure>
+              </div>
+            ))}
+          </article>
+        ))}
+      </section>
 
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={inked} alt="Design" className="gallery__image" />
-              <figcaption className="gallery__caption">Inked design</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={haiku} alt="Haiku page" className="gallery__image" />
-              <figcaption className="gallery__caption">Haiku pag for fanzine</figcaption>
-            </figure>
-          </div>
-
-        </article>
-
-        <article className="gallery__column">
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={fairy} alt="Woodland fairy art" className="gallery__image" />
-              <figcaption className="gallery__caption">Woodland fairy art</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={shirt} alt="Shirt Design" className="gallery__image" />
-              <figcaption className="gallery__caption">Shirt design for student group</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={raven} alt="Raven artwork" className="gallery__image" />
-              <figcaption className="gallery__caption">Raven artwork</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article className="gallery__column">
-        <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={sage} alt="Valorant character" className="gallery__image" />
-              <figcaption className="gallery__caption">Valorant character portrait</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={portrait} alt="Digital portrait" className="gallery__image" />
-              <figcaption className="gallery__caption">Digital portrait</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={bookmark} alt="Bookmark designs" className="gallery__image" />
-              <figcaption className="gallery__caption">Bookmark designs</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article className="gallery__column">
-        <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={girl1} alt="Alice artwork" className="gallery__image" />
-              <figcaption className="gallery__caption">Alice artwork</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={sexura} alt="Durex app design" className="gallery__image" />
-              <figcaption className="gallery__caption">Icon and designs for Durex App</figcaption>
-            </figure>
-          </div>
-
-          <div className="gallery__link">
-            <figure className="gallery__thumb">
-              <img src={final} alt="Post production work" className="gallery__image" />
-              <figcaption className="gallery__caption">Post production work</figcaption>
-            </figure>
-          </div>
-        </article>
+      {/* Artwork Gallery */}
+      <h1 className='title'>Artwork</h1>
+      <p className='subtitle-artwork'>Here is a small collection of some of my recent artwork</p>
+      <section className="gallery">
+        {artworkColumns.map((column, colIndex) => (
+          <article key={colIndex} className="gallery__column">
+            {column.map((image, index) => (
+              <div key={index} className="gallery__link">
+                <figure className="gallery__thumb">
+                  <img src={image.src} alt={image.alt} className="gallery__image" />
+                  <figcaption className="gallery__caption">{image.caption}</figcaption>
+                </figure>
+              </div>
+            ))}
+          </article>
+        ))}
       </section>
     </section>
   );

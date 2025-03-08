@@ -4,7 +4,8 @@ import DesignElem from '../DesignElem/DesignElem';
 
 
 //BannersAndImages
-
+//NIL
+import bannerNil from '../../assets/Images/NILProject/BannerDesignNIL.png';
 //Close
 import bannerClose from '../../assets/Images/CloseProject/CloseBannerDesign.png';
 //Finkargo
@@ -30,8 +31,8 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
             id: 0,
             tag: 'UX/UI Design',
             title: 'E-commerce with Shopify, Amazon & Social Media',
-            description: 'Building and connecting Shopify website for hair care and wigs aligning with marketing ',
-            image: bannerEficacia,
+            description: 'Researching, developing, and scaling hair care brands across e-commerce and diverse sales channels',
+            image: bannerNil,
             path: '/design/0',
 
         },
