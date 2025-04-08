@@ -279,6 +279,7 @@ footer {
     margin-bottom: 24px;
   }
   .about .selfie {
+    order: -1;
     margin-top: 24px;
     width: 100%;
   }
@@ -288,7 +289,7 @@ footer {
   .about__article--1 {
     display: flex;
     flex-direction: column;
-    margin-top: 15em;
+    margin-top: 6em;
     padding-left: 1em;
     padding-right: 1em;
     justify-content: space-between;
@@ -453,7 +454,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 8em;
   }
   .home .design__container .elem:nth-child(1), .home .design__container .elem:nth-child(3), .home .design__container .elem:nth-child(5) {
     align-self: flex-start;
@@ -478,39 +479,53 @@ footer {
   flex-direction: row;
   gap: 24px;
 }
-.elem :hover {
+.elem:hover {
   cursor: pointer;
 }
 .elem .image__container {
+  width: 100%;
+  max-width: 800px;
   overflow: hidden;
+  border-radius: 12px;
 }
 .elem .image__wrapper {
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
 }
 .elem .image {
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
   border-radius: 12px;
   transition: transform 0.4s;
 }
 .elem .image:hover {
-  border-radius: 12px;
   transform: scale(1.02);
 }
 .elem__text {
   margin-top: 1.06em;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   text-align: left;
 }
+
 @media screen and (max-width: 780px) {
   .elem {
     flex-direction: column;
+    gap: 16px;
   }
   .elem .image__container {
     width: 100%;
-    overflow: hidden;
+    height: auto;
+  }
+  .elem .image {
+    width: 100%;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -676,15 +691,71 @@ footer {
   margin-left: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 780px) {
   .design-details {
-    margin-top: 3rem;
-    margin-left: 10rem;
-    width: 50%;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   .design-details__banner {
-    border-radius: 10px;
     width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  .design-details__title {
+    margin-top: 1rem;
+  }
+  .design-details-article--1 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .design-details-article--1--container, .design-details-article--1--container2 {
+    width: 100%;
+  }
+  .design-details-article--2, .design-details-article--4, .design-details-article--5 {
+    gap: 1.5rem;
+  }
+  .design-details-article--3 {
+    margin: auto;
+    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .design-details-images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  .design-details-images {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .custom-list {
+    margin: 1rem 0 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+  .custom-list-item {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .project-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .project-list li {
+    width: 100%;
+  }
+  .project-title {
+    text-align: center;
   }
 }
 .artwork {
@@ -746,9 +817,22 @@ footer {
 
 @media screen and (max-width: 780px) {
   .artwork {
-    margin-top: 15em;
+    margin-top: 8em;
     padding-left: 1em;
     padding-right: 1em;
+  }
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__column {
+    width: 100%;
+  }
+  .gallery__link {
+    width: 100%;
+  }
+  .gallery__image {
+    width: 100%;
   }
 }
 /* Container for the entire menu */
@@ -912,7 +996,7 @@ footer {
     display: block;
   }
   .burger-menu .line {
-    fill: #7a7a9a;
+    fill: #454a95;
     transition: all 0.3s ease; /* Add a transition for smooth animation */
   }
   /* CSS for active state */

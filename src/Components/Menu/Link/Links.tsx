@@ -1,15 +1,20 @@
 import * as React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation} from 'react-router-dom';
 
 interface Link {
 }
 
 export const Links: React.FC<Link> = () => {
     const [state, setState] = React.useState(false)
+    const location = useLocation();
+
 
     const handleBurgerView = () => {
         setState(current => !current)
     }
+    React.useEffect(() => {
+        setState(false);
+    }, [location.pathname]);
 
 
 

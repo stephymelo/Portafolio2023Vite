@@ -20,7 +20,7 @@ export const About: React.FC<About> = () => {
                     <h1 className='title'></h1>
                     <div className='paragraph'>
                         <p className='paragraph__about'>Hola! Thank's for passing by. I'm Stephanie Melo, an artist, designer and developer from SoFlo.</p>
-                        <p className='paragraph__about2'>As a big-picture thinker and someone that loves to be a part of the whole design process. In my spare time I continue to study with courses and documentation on design tendencies and platforms <br /> <br />I am currently looking for new opportunities and face new challenges</p>
+                        <p className='paragraph__about2'>As a big-picture thinker and someone that loves to be a part of the whole design process. In my spare time I continue to study with courses and documentation on design tendencies and platforms. <br /> <br />I am currently looking for new opportunities and face new challenges.</p>
                     </div>
                     <div className='links'>
                         <h6 className='linktitle'>LINKS</h6>

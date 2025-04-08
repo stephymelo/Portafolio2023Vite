@@ -15,6 +15,7 @@ import portrait from '../../assets/Images/ArtGallery/portrait.jpg';
 import bookmark from '../../assets/Images/ArtGallery/Artwork.png';
 import progen1 from '../../assets/Images/ArtGallery/progen-reel.png';
 import progen2 from '../../assets/Images/ArtGallery/progen-post.png';
+import hero from '../../assets/Images/ArtGallery/hero.png';
 
 // Define a type for the artwork objects
 interface ArtworkItem {
@@ -26,7 +27,8 @@ interface ArtworkItem {
 const designImages: ArtworkItem[] = [
   { src: shirt, alt: "Shirt Design", caption: "Shirt design for student group" },
   { src: progen1, alt: "Reel", caption: "Reel Ad for Black Friday" },
-  { src: progen2, alt: "Post", caption: "Reel Ad for Valentine'sn" },
+  { src: progen2, alt: "Post", caption: "Reel Ad for Valentine's" },
+  { src: hero, alt: "Hero", caption: "Hero for Website" },
 
  
 ];

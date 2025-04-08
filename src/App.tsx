@@ -135,7 +135,7 @@ function App() {
       tasks2: 'I worked with a team of two other designers to create the user experience and connect all their services on the platform, creating the design system and delivering final designs.',
       date:'July 2023 - April 2024',
       listTitle1:'Establishing a design system',
-      list1:'This helped the Developer and Product teams have a consisten look and feel across different products.',
+      list1:'This helped the Developer and Product teams design and develop the platform with consistency and aligned with the branding. ',
       listTitle2:'Improved usability and navigation',
       list2:'As a team of designers, we also conducted internal UX research and usability testing for every project',
       listTitle3:'Alignment between Design and Product ',
