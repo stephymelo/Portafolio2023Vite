@@ -31,8 +31,8 @@ interface ArtworkItem {
 
 const designImages: ArtworkItem[] = [
   { src: shirt, alt: "Shirt Design", caption: "Shirt design for university group" },
-  { src: progen1, alt: "Reel", caption: "Reel Ad for Black Friday Progen", },
-  { src: progen2, alt: "Post", caption: "Reel Ad for Valentine's Progen", },
+  { src: sexura, alt: "Durex app design", caption: "Icon and Mobile App for Durex App Concept", extraImages: [heroweb, herowebmockup] },
+  { src: progen1, alt: "Reel", caption: "Reel Ad for Progen", extraImages: [progen2] },
   { src: hero, alt: "Hero", caption: "Hero for HL.com", extraImages: [heroweb, herowebmockup] },
 ];
 
@@ -47,7 +47,6 @@ const artworkImages: ArtworkItem[] = [
   { src: portrait, alt: "Digital portrait", caption: "Digital portrait" },
   { src: bookmark, alt: "Bookmark designs", caption: "Bookmark designs" },
   { src: girl1, alt: "Alice artwork", caption: "Alice artwork" },
-  { src: sexura, alt: "Durex app design", caption: "Icon and designs for Durex App Concept" },
   { src: final, alt: "Post production work", caption: "Post production work" },
 ];
 
@@ -96,6 +95,31 @@ export const Artwork: React.FC = () => {
     );
   };
 
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchEndX, setTouchEndX] = useState<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX !== null && touchEndX !== null) {
+      const distance = touchStartX - touchEndX;
+      if (distance > 50) {
+        goToNext();
+      } else if (distance < -50) {
+        goToPrev();
+      }
+    }
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
+
   return (
     <section className='artwork'>
       {/* Modal Slider */}
@@ -107,12 +131,15 @@ export const Artwork: React.FC = () => {
               <button className="slider-arrow left" onClick={(e) => { e.stopPropagation(); goToPrev(); }}>
                 &lt;
               </button>
-              <div className='image-container'>
-              <img
-                src={currentSlides[currentSlideIndex]}
-                alt={`Slide ${currentSlideIndex + 1}`}
-                className="modal-image"
-              />
+              <div className='image-container' onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}>
+
+                <img
+                  src={currentSlides[currentSlideIndex]}
+                  alt={`Slide ${currentSlideIndex + 1}`}
+                  className="modal-image"
+                />
               </div>
               <button className="slider-arrow right" onClick={(e) => { e.stopPropagation(); goToNext(); }}>
                 &gt;
@@ -145,7 +172,19 @@ export const Artwork: React.FC = () => {
                 onClick={() => handleImageClick(image)}
               >
                 <figure className="gallery__thumb">
+                  {image.extraImages && (
+                    <button className="view-more-button" onClick={(e) => {
+                      e.stopPropagation(); 
+                      handleImageClick(image);
+                    }}>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white">
+    <path d="M12 4.5C7.305 4.5 3.246 7.54 1.5 12c1.746 4.46 5.805 7.5 10.5 7.5s8.754-3.04 10.5-7.5C20.754 7.54 16.695 4.5 12 4.5zm0 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/>
+    <circle cx="12" cy="12" r="2.25"/>
+  </svg>
+                    </button>
+                  )}
                   <img src={image.src} alt={image.alt} className="gallery__image" />
+
                   <figcaption className="gallery__caption">{image.caption}</figcaption>
                 </figure>
               </div>
