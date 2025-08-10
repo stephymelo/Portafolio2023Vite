@@ -4,6 +4,11 @@ import DesignElem from '../DesignElem/DesignElem';
 
 
 //BannersAndImages
+//HL
+import bannerHL from '../../assets/Images/HLProject/BannerDesignHL.png';
+//TA
+import bannerTA from '../../assets/Images/TAProject/BannerDesignTA.png';
+
 //NIL
 import bannerNil from '../../assets/Images/NILProject/BannerDesignNIL.png';
 //Close
@@ -40,7 +45,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
     tag: 'E-commerce Web Development',
     title: 'TressAllure — Website Redesign to E-commerce',
     description: 'Led the full redesign and development of a B2C and B2B e-commerce platform for a leading wig brand.',
-    image: bannerNil,
+    image: bannerTA,
     path: '/design/1',
 },
 {
@@ -48,7 +53,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
     tag: 'E-commerce Web Development',
     title: 'Hairloss.com - E-commerce with Shopify & Social Media',
     description: 'Branding, market research, website development and marketing campaigns.',
-    image: bannerNil,
+    image: bannerHL,
     path: '/design/2',
 },
 {
