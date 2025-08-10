@@ -32,11 +32,11 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 
 
     const [designElems] = React.useState<DesignElemObj[]>([
-  {
+{
     id: 0,
     tag: 'UX/UI Design & Web Development',
-    title: 'Progen Global - E-commerce with Shopify, Amazon & Social Media',
-    description: 'Leading research, design, and development to scale hair care and wig brands across diverse e-commerce and retail channels.',
+    title: 'Progen Global — E-commerce with Shopify, Amazon & Social Media',
+    description: 'Led research, design, and development to expand hair care sales across multi-channel e-commerce and retail platforms.',
     image: bannerNil,
     path: '/design/0',
 },
@@ -44,15 +44,15 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
     id: 1,
     tag: 'E-commerce Web Development',
     title: 'TressAllure — Website Redesign to E-commerce',
-    description: 'Led the full redesign and development of a B2C and B2B e-commerce platform for a leading wig brand.',
+    description: 'Led the complete redesign and development of a B2C and B2B e-commerce platform for a premier wig brand.',
     image: bannerTA,
     path: '/design/1',
 },
 {
     id: 2,
     tag: 'E-commerce Web Development',
-    title: 'Hairloss.com - E-commerce with Shopify & Social Media',
-    description: 'Branding, market research, website development and marketing campaigns.',
+    title: 'Hairloss.com — E-commerce with Shopify & Social Media',
+    description: 'Directed branding, research, and development of an e-commerce platform, paired with targeted marketing campaigns.',
     image: bannerHL,
     path: '/design/2',
 },
