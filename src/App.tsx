@@ -89,7 +89,7 @@ function App() {
     {
 
       id: 0,
-      title: 'New Image Labs',
+      title: 'Progen Global',
       subtitle:'E-commerce websites built with Shopify',
       role: 'UX/UI, Frontend Developer, Shopify Developer ',
       tasks: 'I was responsible for designing, developing, and leading a team of developers while also actively contributing to the development of two e-commerce websites for the company, which specialize in hair care and hair replacement products. ',
@@ -127,7 +127,7 @@ function App() {
 
     },
     {
-      id: 1,
+      id: 3,
       title: 'Redesign for B2B Fintech',
       subtitle:'Product launch',
       role: 'Product design, User research, Design System',
@@ -162,7 +162,7 @@ function App() {
     },
     {
 
-      id: 3,
+      id: 5,
       title: 'Close Web App',
       subtitle:'UX UI Case Study',
       role: 'UX researcher, discovery, investigation, wireframing, testing ',
@@ -197,7 +197,7 @@ function App() {
     },
     
     {
-      id: 2,
+      id: 4,
       title: 'Efipuntos cupon and rewards app',
       subtitle:'Product design',
       role: 'UX Research, Product design, Frontend developer',
@@ -231,7 +231,7 @@ function App() {
 
     },
     {
-      id: 4,
+      id: 6,
       title: 'Verby educational tool',
       subtitle:'Graduate project',
       role: 'UX Research, Product design, Frontend Developer',

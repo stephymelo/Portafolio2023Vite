@@ -27,51 +27,63 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 
 
     const [designElems] = React.useState<DesignElemObj[]>([
-        {
-            id: 0,
-            tag: 'UX/UI Design',
-            title: 'E-commerce with Shopify, Amazon & Social Media',
-            description: 'Researching, developing, and scaling hair care brands across e-commerce and diverse sales channels',
-            image: bannerNil,
-            path: '/design/0',
+  {
+    id: 0,
+    tag: 'UX/UI Design & Web Development',
+    title: 'Progen Global - E-commerce with Shopify, Amazon & Social Media',
+    description: 'Leading research, design, and development to scale hair care and wig brands across diverse e-commerce and retail channels.',
+    image: bannerNil,
+    path: '/design/0',
+},
+{
+    id: 1,
+    tag: 'E-commerce Web Development',
+    title: 'TressAllure — Website Redesign to E-commerce',
+    description: 'Led the full redesign and development of a B2C and B2B e-commerce platform for a leading wig brand.',
+    image: bannerNil,
+    path: '/design/1',
+},
+{
+    id: 2,
+    tag: 'E-commerce Web Development',
+    title: 'Hairloss.com - E-commerce with Shopify & Social Media',
+    description: 'Branding, market research, website development and marketing campaigns.',
+    image: bannerNil,
+    path: '/design/2',
+},
+{
+    id: 3,
+    tag: 'Product Design',
+    title: 'Finkargo - B2B Fintech Platform',
+    description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
+    image: bannerFinkargo,
+    path: '/design/3',
+},
+{
+    id: 4,
+    tag: 'UX/UI Project',
+    title: 'Efipuntos — Coupons & Rewards App',
+    description: 'Designed an app experience where customers earn benefits and rewards through purchases and engagement.',
+    image: bannerEficacia,
+    path: '/design/4',
+},
+{
+    id: 5,
+    tag: 'UX/UI Case Study',
+    title: 'Close — Educational & Social App',
+    description: 'Integrated social interactions into a digital platform to enhance communication and user motivation.',
+    image: bannerClose,
+    path: '/design/5',
+},
+{
+    id: 6,
+    tag: 'Graduate Project',
+    title: 'Verby — Educational Tool',
+    description: 'Applied gamification and micro-learning to create an engaging way to learn specialized terminology.',
+    image: bannerVerby,
+    path: '/design/6',
+},
 
-        },
-        {
-            id: 1,
-            tag: 'Product Design',
-            title: 'Redesign for B2B Fintech',
-            description: 'User research and mapping flow, along with creating the design system',
-            image: bannerFinkargo,
-            path: '/design/1',
-
-        },
-        {
-            id: 2,
-            tag: 'UX/UI Project',
-            title: 'Efipuntos cupon and rewards app',
-            description: 'Customers that buy and interact with the app can earn benefits and rewards',
-            image: bannerEficacia,
-            path: '/design/2',
-
-        },
-        {
-            id: 3,
-            tag: 'UX/UI Case Study',
-            title: 'Close Case Study ',
-            description: 'Integrating social interactions in the digital medium for better communication and user motivation',
-            image: bannerClose,
-            path: '/design/3',
-
-        },
-        {
-            id: 4,
-            tag: 'Graduate project',
-            title: 'Verby educational tool',
-            description: 'amification theories and micro-learning for a fun and easy way to learn terminology',
-            image: bannerVerby,
-            path: '/design/4',
-
-        },
 
 
     ]);
