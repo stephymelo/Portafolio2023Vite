@@ -56,7 +56,7 @@ import mockupfinal from './assets/Images/CloseProject/Mockup.png';
 
 
 //Finkargo
-import bannerFinkargo from './assets/Images/FinkargoProject/BannerDesign.png';
+import bannerFinkargo from './assets/Images/FinkargoProject/BannerDesignFK.png';
 import bannerFinkargoThumb from './assets/Images/FinkargoProject/BannerThumbnailFintech.png';
 import userflowFK from './assets/Images/FinkargoProject/userFK.png';
 import roadmapFK from './assets/Images/FinkargoProject/planFK.png';

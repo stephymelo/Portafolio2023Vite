@@ -14,7 +14,7 @@ import bannerNil from '../../assets/Images/NILProject/BannerDesignNIL.png';
 //Close
 import bannerClose from '../../assets/Images/CloseProject/CloseBannerDesign.png';
 //Finkargo
-import bannerFinkargo from '../../assets/Images/FinkargoProject/BannerDesign.png';
+import bannerFinkargo from '../../assets/Images/FinkargoProject/BannerDesignFK.png';
 //Eficacia
 import bannerEficacia from '../../assets/Images/EficaciaProject/BannerDesignEfipuntos.png';
 //Verby
