@@ -38,7 +38,10 @@ import bannerHL from './assets/Images/HLProject/BannerDesignHL.png';
 import bannerHLThumb from './assets/Images/HLProject/BannerThumbnailHL.png';
 import wireframeHL from './assets/Images/HLProject/homeHL.png';
 import homeHL from './assets/Images/HLProject/hlHome.png';
-
+import homeHLMobile from './assets/Images/HLProject/homeHLMobile.png';
+import serviceHL from './assets/Images/HLProject/serviceblueprint.png';
+import sitemapHL from './assets/Images/HLProject/sitemapHL.png';
+import prototypeHL from './assets/Images/HLProject/prototypeHL.png';
 
 
 //Close
@@ -195,20 +198,20 @@ function App() {
       list4: 'Hairloss.com will serve as a direct-to-consumer hub offering wigs, hair systems, and support resources with a focus on empathy and usability.',
       bannerImg: bannerHL,
       bannerThumbnail: bannerHLThumb,
-      paragraph1: 'Hairloss.com is being developed as a consumer-first platform, providing solutions, education, and products for both men and women experiencing hair loss.',
+      paragraph1: 'Hairloss.com was developed as a consumer-first platform, providing solutions, education, and products for both men and women experiencing hair loss.',
       subtitle1: 'Understanding the needs of end-consumers',
-      image1: 'customersHL',
-      image2: '',
-      subtitle2: 'Crafting the information architecture',
-      paragraph2: 'We created a sitemap and userflows tailored to customers at different stages of their journey—from first-time wig users to those seeking long-term solutions.',
+      image1: serviceHL,
+      image2: sitemapHL,
+      subtitle2: 'Wireframes and prototyping',
+      paragraph2: '',
       image3: wireframeHL,
-      image4: '',
+      image4: prototypeHL,
       subtitle3: 'Designing for trust and reassurance',
       paragraph3: 'Every element of the design—from color palettes to typography—was chosen to foster confidence, empathy, and clarity for customers making a sensitive purchase.',
       subtitle4: 'Consistency across touchpoints',
       paragraph4: 'A design system was created to maintain consistency across the website, email communications, and educational resources, reinforcing trust and credibility.',
-      image5: '',
-      image6: homeHL,
+      image5: homeHL,
+      image6: homeHLMobile,
     },
 
     {
