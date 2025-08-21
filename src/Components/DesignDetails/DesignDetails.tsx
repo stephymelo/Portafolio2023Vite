@@ -84,6 +84,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
             <article className='design-details-article--3'>
                 <h2 className='design-details__subtitle'>{subtitle1}</h2>
+                
                 <div className='design-details-images-container'>
                     <img className='design-details-images' src={image1} alt='Investigation Image 1' />
                     <img className='design-details-images' src={image2} alt='Investigation Image 2' />
