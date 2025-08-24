@@ -34,7 +34,7 @@ import retailersTA from './assets/Images/TAProject/retailers-list.png';
 
 
 //HL
-import bannerHL from './assets/Images/HLProject/BannerHL.png';
+import bannerHL from './assets/Images/HLProject/BannerHL.jpg';
 import bannerHLThumb from './assets/Images/HLProject/BannerThumbnailHL.png';
 import wireframeHL from './assets/Images/HLProject/homeHL.png';
 import homeHL from './assets/Images/HLProject/hlHome.png';
