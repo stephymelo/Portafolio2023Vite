@@ -21,7 +21,7 @@
     z-index: 1002;
 
     &:hover {
-        background-color: rgba(142, 39, 156, 0.1);
+        background-color: $purple;
     }
 }
 
@@ -37,9 +37,13 @@
 .burger-line {
     height: 2px;
     width: 100%;
-    background-color: #333;
+    background-color: $textPrimary;
     border-radius: 2px;
     transition: all 0.3s ease;
+}
+
+.burger-menu:hover .burger-line {
+  background-color: $background;
 }
 
 .burger-menu.active {
@@ -140,11 +144,11 @@
     }
 
     &:hover {
-        color: $darkpurple;
+        color: $purpleSecondary;
     }
 
     &.active {
-        color: $darkpurple;
+        color: $purpleSecondary;
 
     }
 }

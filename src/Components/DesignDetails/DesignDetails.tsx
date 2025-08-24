@@ -34,13 +34,13 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         listTitle4,
         list4,
         bannerImg,
+        background,
         paragraph1,
         paragraph2,
         paragraph3,
         paragraph4,
         role,
-        tasks,
-        tasks2,
+        overview,
         date,
         image1,
         image2,
@@ -54,6 +54,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         <section className='design-section'>
             <div className='design-section__content'>
                 <h1 className='content-title'>{title}</h1>
+                <h2 className='content-role'>{role}</h2>
                 <h4 className='content-subtitle'>{subtitle}</h4>
                 <img className='design-section-banner' src={bannerImg} alt={title} />
             </div>
@@ -64,19 +65,21 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
                 <article className='design-details-article--1'>
                     <div className='design-details-article--1--container '>
                         <h6 className='design-details-subtitle-mini'>Overview</h6>
-                        <p>{tasks}</p>
-                        <p>{tasks2}</p>
+                        <p>{overview}</p>
                     </div>
                     <div className='design-details-article--1--container2 container1'>
-                        <h6 className='design-details-subtitle-mini'>My Role</h6>
-                        <p>{role}</p>
+                        <h6 className='design-details-subtitle-mini'>Time Frame</h6>
+
                         <p>{date}</p>
                     </div>
                 </article>
 
                 <article className='design-details-article--2'>
                     <h2 className='design-details__subtitle'>Background</h2>
-                    <p className='design-details__description'>{paragraph1}</p>
+
+                    {background.split("\n\n").map((bgsplit, i) => (
+                        <p className='design-details__description' key={i}>{bgsplit}</p>
+                    ))}
                     <ul className='custom-list'>
                         <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle1}</p><p className='list-info'>{list1}</p></div></li>
                         <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle2}</p><p className='list-info'>{list2}</p></div></li>
@@ -87,6 +90,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
                 <article className='design-details-article--3'>
                     <h2 className='design-details__subtitle'>{subtitle1}</h2>
+                    <p>{paragraph1}</p>
 
                     <div className='design-details-images-container'>
                         <img className='design-details-images' src={image1} alt='Investigation Image 1' />

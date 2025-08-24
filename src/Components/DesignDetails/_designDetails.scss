@@ -10,25 +10,28 @@
 
   }
 
-  .content-subtitle {
-
-    margin-bottom: 46px;
-
-  }
-
-  .content-title {
-
+   .content-title {
     margin-bottom: 24px;
+  }
+   .content-role {
+    margin-bottom: 16px;
+    color:$pink;
+  }
 
+
+  .content-subtitle {
+    margin-bottom: 46px;
+    color: $textTerciary;
 
   }
 
+ 
   .design-section-banner {
     width: 100%;
     border-radius: 16px;
 
-   
-   
+
+
 
   }
 }
@@ -45,10 +48,14 @@
 
 
 
-  &__title {
-    margin-top: 0.5em;
-  }
+
 }
+
+.design-details-subtitle-mini {
+
+  color: $textTerciary;
+}
+
 
 .design-details-article {
 
@@ -87,7 +94,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 2em;
   }
 
   &--4 {
@@ -110,31 +117,21 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap:2em;
+  gap: 2em;
 
- 
+
 }
 
 .design-details-images {
   width: 100%;
-   border-radius: 16px;
+  border-radius: 16px;
 }
-
-.custom-list {
-  list-style: none;
-  margin-top: 0.5em;
-  margin-left: 6em;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  width: 80%;
-}
-
 .custom-list-item {
   margin-bottom: 30px;
-  padding-left: 20px;
-  display: flex;
+  padding-left: 1.5em; // give space for the bullet
   position: relative;
+  display: flex;
+  align-items: flex-start; // aligns bullet with top of content
 
   .list-item-content {
     display: flex;
@@ -155,13 +152,13 @@
 .custom-list-item::before {
   content: "\2022";
   color: $textPrimary;
-  font-size: 2em;
+  font-size: 1.2em; // smaller so it aligns visually
   position: absolute;
   left: 0;
-  top: 15%;
-  transform: translateY(-50%);
-  margin-right: 10px;
+  top: 0.3em; // aligns with first text line
+  line-height: 1;
 }
+
 
 .line {
   width: 100%;

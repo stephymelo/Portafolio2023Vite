@@ -44,6 +44,11 @@
     text-align: left;
   }
 
+  &__tag{
+    color:$lightpurple;
+    font-weight: 500;
+  }
+
 }
 
 @media screen and (max-width: 780px) {

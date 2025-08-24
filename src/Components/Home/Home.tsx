@@ -42,28 +42,30 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 },
 {
     id: 1,
-    tag: 'E-commerce Web Development',
-    title: 'TressAllure — Website Redesign to E-commerce',
-    description: 'Led the complete redesign and development of a B2C and B2B e-commerce platform for a premier wig brand.',
-    image: bannerTA,
+    tag: 'UX/UI Design',
+    title: 'Finkargo - B2B Fintech Platform',
+    description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
+    image: bannerFinkargo,
     path: '/design/1',
 },
 {
     id: 2,
     tag: 'E-commerce Web Development',
+    title: 'TressAllure — Website Redesign to E-commerce',
+    description: 'Led the complete redesign and development of a B2C and B2B e-commerce platform for a premier wig brand.',
+    image: bannerTA,
+    path: '/design/2',
+},
+
+{
+    id: 3,
+    tag: 'E-commerce Web Development',
     title: 'Hairloss.com — E-commerce with Shopify & Social Media',
     description: 'Directed branding, research, and development of an e-commerce platform, paired with targeted marketing campaigns.',
     image: bannerHL,
-    path: '/design/2',
-},
-{
-    id: 3,
-    tag: 'Product Design',
-    title: 'Finkargo - B2B Fintech Platform',
-    description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
-    image: bannerFinkargo,
     path: '/design/3',
 },
+
 {
     id: 4,
     tag: 'UX/UI Project',
