@@ -14,7 +14,7 @@ import { Contact } from './Components/Contact/Contact';
 //BannersAndImages
 
 //NewImageLabs
-import bannerNil from './assets/Images/NILProject/BannerDesignNIL.png';
+import bannerPG from './assets/Images/NILProject/BannerPG.jpg';
 import bannerNilThumb from './assets/Images/NILProject/BannerThumbnailNIL.png';
 import userProgen from './assets/Images/NILProject/user-PG.png';
 import researchProgen from './assets/Images/NILProject/Research-PG.png';
@@ -34,7 +34,7 @@ import retailersTA from './assets/Images/TAProject/retailers-list.png';
 
 
 //HL
-import bannerHL from './assets/Images/HLProject/BannerDesignHL.png';
+import bannerHL from './assets/Images/HLProject/BannerHL.png';
 import bannerHLThumb from './assets/Images/HLProject/BannerThumbnailHL.png';
 import wireframeHL from './assets/Images/HLProject/homeHL.png';
 import homeHL from './assets/Images/HLProject/hlHome.png';
@@ -123,7 +123,7 @@ function App() {
       list3: 'Connected the website with Amazon and social media platforms, ensuring a seamless digital presence to drive discovery, engagement, and conversions.',
       listTitle4: 'Innovative Features',
       list4: 'Developed functionalities to support both B2B and B2C operations, seamlessly integrating online sales with the sales team. This ensured a smooth workflow for order processing, client management, and communication between digital and physical sales channels.',
-      bannerImg: bannerNil,
+      bannerImg: bannerPG,
       bannerThumbnail: bannerNilThumb,
       subtitle1: 'Investigation and Userflows',
       paragraph1: '',
@@ -200,7 +200,7 @@ function App() {
       list4: 'The site is on track to launch by end of this month with all the main features and pages wanted by the stakeholders.',
       bannerImg: bannerTA,
       bannerThumbnail: bannerTAThumb,
-      background: 'TressAllure is a wholesale wig brand created in 2005.',
+      background: 'TressAllure, created in the year 2000, is a wig brand that mainly focuses on ready-to-wear synthetic wigs.',
       subtitle1: 'Understanding the needs of business for the website - Retailers and End-Consumers',
       paragraph1: '',
       image1: retailersTA,
@@ -220,9 +220,9 @@ function App() {
     {
 
       id: 3,
-      title: 'Hairloss.com',
-      subtitle: 'E-commerce built with Shopify',
-      role: 'UX/UI, Project Manager, Frontend, Shopify,',
+      title: 'Building and Launching Marketplace Hairloss.com',
+      subtitle: 'UX, UI, Project Management, Frontend ',
+      role: 'UX/UI Lead',
       overview: 'Branding, website design, development, and customer experience optimization.',
       date: 'May 2024 - January 2025',
       background: 'Hairloss.com was developed as a consumer-first platform, providing solutions, education, and products for both men and women experiencing hair loss.',

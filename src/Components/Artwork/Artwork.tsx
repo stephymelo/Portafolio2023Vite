@@ -7,7 +7,7 @@ import space from '../../assets/Images/ArtGallery/space.png';
 import girl1 from '../../assets/Images/ArtGallery/Alice.jpg';
 import fairy from '../../assets/Images/ArtGallery/Fairy.jpg';
 import inked from '../../assets/Images/ArtGallery/DesignInkBG.png';
-import sexura from '../../assets/Images/ArtGallery/Sexurados.png';
+import catalogMen from '../../assets/Images/ArtGallery/catalog-men-nil-mockup.png';
 import raven from '../../assets/Images/ArtGallery/raven.png';
 import final from '../../assets/Images/ArtGallery/final.jpg';
 import shirt from '../../assets/Images/ArtGallery/blackVersion2.jpg';
@@ -30,8 +30,8 @@ interface ArtworkItem {
 }
 
 const designImages: ArtworkItem[] = [
-  { src: shirt, alt: "Shirt Design", caption: "Shirt design for university group" },
-  { src: sexura, alt: "Durex app design", caption: "Icon and Mobile App for Durex App Concept", extraImages: [heroweb, herowebmockup] },
+  { src: shirt, alt: "Shirt Design", caption: "Shirt design for University Group" },
+  { src: catalogMen, alt: "Catalog Men Mockup", caption: "Catalog for Men's Toupees"},
   { src: progen1, alt: "Reel", caption: "Reel Ad for Progen", extraImages: [progen2] },
   { src: hero, alt: "Hero", caption: "Hero for HL.com", extraImages: [heroweb, herowebmockup] },
 ];
