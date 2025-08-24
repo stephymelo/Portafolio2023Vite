@@ -56,14 +56,16 @@ import mockupfinal from './assets/Images/CloseProject/Mockup.png';
 
 
 //Finkargo
-import bannerFinkargo from './assets/Images/FinkargoProject/BannerDesignFK.png';
+import bannerFinkargo from './assets/Images/FinkargoProject/BannerElemFK.jpg';
 import bannerFinkargoThumb from './assets/Images/FinkargoProject/BannerThumbnailFintech.png';
 import userflowFK from './assets/Images/FinkargoProject/userFK.png';
 import roadmapFK from './assets/Images/FinkargoProject/planFK.png';
-import designBannerFK from './assets/Images/FinkargoProject/designBanner.png';
-import designSystemFK from './assets/Images/FinkargoProject/designSystem.png';
-import formsFK from './assets/Images/FinkargoProject/GraphicResourcesFK.png';
-import panelFK from './assets/Images/FinkargoProject/PanelFinkargo.png';
+
+import designSystemFK from './assets/Images/FinkargoProject/DesignSystem-FK.png';
+
+import panelFK from './assets/Images/FinkargoProject/panelFK.png';
+import componentsFK from './assets/Images/FinkargoProject/DesignComponents-FK.png';
+import iconsFK from './assets/Images/FinkargoProject/Iconography-FK.png'
 
 //Eficacia
 import bannerEficacia from './assets/Images/EficaciaProject/BannerDesignEfipuntos.png';
@@ -180,8 +182,42 @@ function App() {
 
     },
     {
-
       id: 2,
+      title: 'Redesign for Brand Alignment, Expanded Products, and Enhanced Features ',
+      subtitle: 'UX, UI, Visual Design, Design Systems',
+      role: 'Product design, User research, Design System',
+      tasks: 'For a fintech startup that focuses on international commerce, after receiving a re-branding, a design system and re-design were needed for the platform, where clients can track, finance and analyze their imports.',
+      tasks2: 'I worked with a team of two other designers to create the user experience and connect all their services on the platform, creating the design system and delivering final designs.',
+      date: 'July 2023 - April 2024',
+      listTitle1: 'Establishing a design system',
+      list1: 'This helped the Developer and Product teams design and develop the platform with consistency and aligned with the branding. ',
+      listTitle2: 'Improved usability and navigation',
+      list2: 'As a team of designers, we also conducted internal UX research and usability testing for every project',
+      listTitle3: 'Alignment between Design and Product ',
+      list3: 'Aligning processes and mapping for the platform, allowed us to have a clearer idea and understanding',
+      listTitle4: 'Iniciatives for documentation',
+      list4: 'We utilized collaborative tools like Miro and Confluence to document each project, ensuring accessible information for the entire team.',
+      bannerImg: bannerFinkargo,
+      bannerThumbnail: bannerFinkargoThumb,
+      subtitle1: 'Look and feel',
+      paragraph1: 'When I first joined the startup, they had one main product which was financing clients imports but later on wanted to add other products and services, thus it was important to define the users and re-organize the site map. Collaborating with a dedicated research and data team, we conducted user interviews and crafted detailed user personas. Subsequently, working closely with the project managers, we developed a comprehensive sitemap. Leveraging my understanding of the product, I took on the responsibility of reshaping the design and user flow for their flagship product—import financing. Simultaneously, we worked on a redesign of the look and feel and worked on the design system. This system, once implemented by our developers, aimed to enhance consistency and efficiency across the platform.',
+      image1: iconsFK,
+      subtitle2: 'Creating the design system',
+      paragraph2: 'I led the re-design of the design system, identifying which component was a priority to tackle and bringing proposals to our weekly sessions where we worked together to define the component. I did the documentation which was very important to have to be able to explain to the front ends the correct usage, variants, sizes and colors of the components. This also helped start a guide for implementing responsiveness which is important for accessibility.',
+      image2: panelFK,
+      subtitle3: 'Roadmap with my P.M.',
+      paragraph3: 'Following the roadmap of the product and ideas of my P.M, I created the user flows and interfaces to achieve the goal. This required constant communication and discussions to clarify and refine the flows with my P.M. I also communicated which flows we should prioritize based on their complexity, priority and length so that they could be delivered at least within one sprint of anticipation. I validated the interfaces with my P.M and conducted validations with both internal and external users before passing the final designs to our devs.',
+      image3: designSystemFK,
+      subtitle4: 'Results and learning experience',
+      paragraph4: 'The multifaceted nature of the project allowed me to explore and design the design system. I also had an effective collaboration with different teams, having to communicate constantly with them. Finally, I was also able to conduct user research and work on the information architecture of the product, working closely with my PM. This experience enriched my skill set, organization and future approaches to other projects.',
+      image4: componentsFK,
+      image5: userflowFK,
+      image6: roadmapFK,
+
+    },
+    {
+
+      id: 3,
       title: 'Hairloss.com',
       subtitle: 'E-commerce built with Shopify',
       role: 'UX/UI, Project Manager, Frontend, Shopify,',
@@ -214,40 +250,7 @@ function App() {
       image6: homeHLMobile,
     },
 
-    {
-      id: 3,
-      title: 'Redesign for B2B Fintech',
-      subtitle: 'Product launch',
-      role: 'Product design, User research, Design System',
-      tasks: 'For a fintech startup that focuses on international commerce, after receiving a re-branding, a design system and re-design were needed for the platform, where clients can track, finance and analyze their imports.',
-      tasks2: 'I worked with a team of two other designers to create the user experience and connect all their services on the platform, creating the design system and delivering final designs.',
-      date: 'July 2023 - April 2024',
-      listTitle1: 'Establishing a design system',
-      list1: 'This helped the Developer and Product teams design and develop the platform with consistency and aligned with the branding. ',
-      listTitle2: 'Improved usability and navigation',
-      list2: 'As a team of designers, we also conducted internal UX research and usability testing for every project',
-      listTitle3: 'Alignment between Design and Product ',
-      list3: 'Aligning processes and mapping for the platform, allowed us to have a clearer idea and understanding',
-      listTitle4: 'Iniciatives for documentation',
-      list4: 'We utilized collaborative tools like Miro and Confluence to document each project, ensuring accessible information for the entire team.',
-      bannerImg: bannerFinkargo,
-      bannerThumbnail: bannerFinkargoThumb,
-      subtitle1: 'Look and feel',
-      paragraph1: 'When I first joined the startup, they had one main product which was financing clients imports but later on wanted to add other products and services, thus it was important to define the users and re-organize the site map. Collaborating with a dedicated research and data team, we conducted user interviews and crafted detailed user personas. Subsequently, working closely with the project managers, we developed a comprehensive sitemap. Leveraging my understanding of the product, I took on the responsibility of reshaping the design and user flow for their flagship product—import financing. Simultaneously, we worked on a redesign of the look and feel and worked on the design system. This system, once implemented by our developers, aimed to enhance consistency and efficiency across the platform.',
-      image1: formsFK,
-      subtitle2: 'Creating the design system',
-      paragraph2: 'I led the re-design of the design system, identifying which component was a priority to tackle and bringing proposals to our weekly sessions where we worked together to define the component. I did the documentation which was very important to have to be able to explain to the front ends the correct usage, variants, sizes and colors of the components. This also helped start a guide for implementing responsiveness which is important for accessibility.',
-      image2: panelFK,
-      subtitle3: 'Roadmap with my P.M.',
-      paragraph3: 'Following the roadmap of the product and ideas of my P.M, I created the user flows and interfaces to achieve the goal. This required constant communication and discussions to clarify and refine the flows with my P.M. I also communicated which flows we should prioritize based on their complexity, priority and length so that they could be delivered at least within one sprint of anticipation. I validated the interfaces with my P.M and conducted validations with both internal and external users before passing the final designs to our devs.',
-      image3: designBannerFK,
-      subtitle4: 'Results and learning experience',
-      paragraph4: 'The multifaceted nature of the project allowed me to explore and design the design system. I also had an effective collaboration with different teams, having to communicate constantly with them. Finally, I was also able to conduct user research and work on the information architecture of the product, working closely with my PM. This experience enriched my skill set, organization and future approaches to other projects.',
-      image4: designSystemFK,
-      image5: userflowFK,
-      image6: roadmapFK,
 
-    },
     {
       id: 4,
       title: 'Efipuntos cupon and rewards app',

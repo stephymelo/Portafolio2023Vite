@@ -51,97 +51,100 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
     } = selectedElement;
 
     return (
-        <section className='design-details'>
-            <img className='design-details__banner' src={bannerImg} alt={title} />
-            <div>
-                <h4 className='design-details__subtitle'>{subtitle}</h4>
-                <h1 className='design-details__title'>{title}</h1>
+        <section className='design-section'>
+            <div className='design-section__content'>
+                <h1 className='content-title'>{title}</h1>
+                <h4 className='content-subtitle'>{subtitle}</h4>
+                <img className='design-section-banner' src={bannerImg} alt={title} />
             </div>
 
-            <article className='design-details-article--1'>
-                <div className='design-details-article--1--container '>
-                    <h6 className='design-details-subtitle-mini'>Overview</h6>
-                    <p>{tasks}</p>
-                    <p>{tasks2}</p>
-                </div>
-                <div className='design-details-article--1--container2 container1'>
-                    <h6 className='design-details-subtitle-mini'>My Role</h6>
-                    <p>{role}</p>
-                    <p>{date}</p>
-                </div>
-            </article>
+            <section className='design-details'>
 
-            <article className='design-details-article--2'>
-                <h2 className='design-details__subtitle'>Background</h2>
-                <p className='design-details__description'>{paragraph1}</p>
-                <ul className='custom-list'>
-                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle1}</p><p className='list-info'>{list1}</p></div></li>
-                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle2}</p><p  className='list-info'>{list2}</p></div></li>
-                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle3}</p><p className='list-info'>{list3}</p></div></li>
-                    <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle4}</p><p className='list-info'>{list4}</p></div></li>
+
+                <article className='design-details-article--1'>
+                    <div className='design-details-article--1--container '>
+                        <h6 className='design-details-subtitle-mini'>Overview</h6>
+                        <p>{tasks}</p>
+                        <p>{tasks2}</p>
+                    </div>
+                    <div className='design-details-article--1--container2 container1'>
+                        <h6 className='design-details-subtitle-mini'>My Role</h6>
+                        <p>{role}</p>
+                        <p>{date}</p>
+                    </div>
+                </article>
+
+                <article className='design-details-article--2'>
+                    <h2 className='design-details__subtitle'>Background</h2>
+                    <p className='design-details__description'>{paragraph1}</p>
+                    <ul className='custom-list'>
+                        <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle1}</p><p className='list-info'>{list1}</p></div></li>
+                        <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle2}</p><p className='list-info'>{list2}</p></div></li>
+                        <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle3}</p><p className='list-info'>{list3}</p></div></li>
+                        <li className="custom-list-item"> <div className='list-item-content'><p className='strong-text'>{listTitle4}</p><p className='list-info'>{list4}</p></div></li>
+                    </ul>
+                </article>
+
+                <article className='design-details-article--3'>
+                    <h2 className='design-details__subtitle'>{subtitle1}</h2>
+
+                    <div className='design-details-images-container'>
+                        <img className='design-details-images' src={image1} alt='Investigation Image 1' />
+                        <img className='design-details-images' src={image2} alt='Investigation Image 2' />
+                    </div>
+                </article>
+
+                <article className='design-details-article--4'>
+                    <h2 className='design-details__subtitle'>{subtitle2}</h2>
+                    <p>{paragraph2}</p>
+                    <div className='design-details-images-container'>
+                        <img className='design-details-images' src={image3} alt='Investigation Image 3'></img>
+                        <img className='design-details-images' src={image4} alt='Investigation Image 4'></img>
+                    </div>
+
+                </article>
+
+                <article className='design-details-article--5'>
+                    <h2 className='design-details__subtitle'>{subtitle3}</h2>
+                    <p>{paragraph3}</p>
+                    <div className='design-details-images-container'>
+                        <img className='design-details-images' src={image5} alt='Investigation Image 5'></img>
+                        <img className='design-details-images' src={image6} alt='Investigation Image 6'></img>
+                    </div>
+
+
+
+                </article>
+
+                <article className='design-details-article--6'>
+                    <h2 className='design-details__subtitle'>{subtitle4}</h2>
+                    <p className='design-details__description'>{paragraph4}</p>
+
+                </article>
+
+                <div className="line"></div>
+                <h2 className="project-title" >More projects</h2>
+
+                <ul className="project-list">
+                    {previousItem && (
+                        <li>
+                            <Link to={`/design/${previousItem.id}`}>
+                                <img src={previousItem.bannerThumbnail} alt="thumbnail" />
+
+                            </Link>
+                        </li>
+                    )}
+
+                    {nextItem && (
+                        <li>
+                            <Link to={`/design/${nextItem.id}`}>
+                                <img src={nextItem.bannerThumbnail} alt="thumbnail" />
+
+                            </Link>
+                        </li>
+                    )}
                 </ul>
-            </article>
-
-            <article className='design-details-article--3'>
-                <h2 className='design-details__subtitle'>{subtitle1}</h2>
-                
-                <div className='design-details-images-container'>
-                    <img className='design-details-images' src={image1} alt='Investigation Image 1' />
-                    <img className='design-details-images' src={image2} alt='Investigation Image 2' />
-                </div>
-            </article>
-
-            <article className='design-details-article--4'>
-                <h2 className='design-details__subtitle'>{subtitle2}</h2>
-                <p>{paragraph2}</p>
-                <div className='design-details-images-container'>
-                <img className='design-details-images' src={image3} alt='Investigation Image 3'></img>
-                <img className='design-details-images' src={image4} alt='Investigation Image 4'></img>
-                </div>
-
-            </article>
-
-            <article className='design-details-article--5'>
-                <h2 className='design-details__subtitle'>{subtitle3}</h2>
-                <p>{paragraph3}</p>
-                <div className='design-details-images-container'>
-                <img className='design-details-images' src={image5} alt='Investigation Image 5'></img>
-                <img className='design-details-images' src={image6} alt='Investigation Image 6'></img>
-                </div>
-
-
-
-            </article>
-
-            <article className='design-details-article--6'>
-                <h2 className='design-details__subtitle'>{subtitle4}</h2>
-                <p className='design-details__description'>{paragraph4}</p>
-
-            </article>
-
-            <div className="line"></div>
-            <h2 className="project-title" >More projects</h2>
-
-            <ul className="project-list">
-                {previousItem && (
-                    <li>
-                        <Link to={`/design/${previousItem.id}`}>
-                            <img src={previousItem.bannerThumbnail} alt="thumbnail" />
-
-                        </Link>
-                    </li>
-                )}
-
-                {nextItem && (
-                    <li>
-                        <Link to={`/design/${nextItem.id}`}>
-                            <img src={nextItem.bannerThumbnail} alt="thumbnail" />
-
-                        </Link>
-                    </li>
-                )}
-            </ul>
-
+            </section>
         </section>
     );
 };

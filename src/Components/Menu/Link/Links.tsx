@@ -1,130 +1,79 @@
 import * as React from 'react';
-import { NavLink, useLocation} from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
-interface Link {
-}
+interface Link {}
 
 export const Links: React.FC<Link> = () => {
-    const [state, setState] = React.useState(false)
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const location = useLocation();
 
-
-    const handleBurgerView = () => {
-        setState(current => !current)
-    }
+    const toggleMenu = () => {
+        setIsMenuOpen(current => !current);
+    };
+    
     React.useEffect(() => {
-        setState(false);
+        setIsMenuOpen(false);
     }, [location.pathname]);
 
-
-
     return (
-        <div>
-            <nav className='menu-web'>
-                <ul className="list">
-                    <li className="item item--1">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/home" > <span>Home</span> </NavLink>
-
-                    </li>
-                    <li className="item item--2">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/about" > <span>About</span> </NavLink>
-
-                    </li>
-
-                    {/* <li className="item item--3">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/design" > <span>Projects</span>  </NavLink>
-                    </li> */}
-
-                    <li className="item item--4">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/artwork" > <span>Gallery</span> </NavLink>
-                    </li>
-
-                </ul>
-            </nav>
-
-            <div onClick={handleBurgerView} className={`burger-menu ${state ? 'active' : ''}`}>
-                <svg viewBox="0 0 100 80" width="25" height="25">
-                    <rect className='line' x="0" width="100" height="10"></rect>
-                    <rect className='line' x="30" y="30" width="100" height="10"></rect>
-                    <rect className='line' x="60" y="60" width="100" height="10"></rect>
-                </svg>
+        <div className="navigation-container">
+            {/* Hamburger Button */}
+            <div 
+                onClick={toggleMenu} 
+                className={`burger-menu ${isMenuOpen ? 'active' : ''}`}
+            >
+                <div className="burger-icon">
+                    <span className="burger-line"></span>
+                    <span className="burger-line"></span>
+                </div>
             </div>
-            <nav className={`menu-mobile ${state ? 'active' : ''}`}>
-
-                <ul className="list">
-                    <li className="item item--1">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/home" > <span>Home</span> </NavLink>
-
-                    </li>
-
-                    <li className="item item--2">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/about" > <span>About</span>  </NavLink>
-                    </li>
-
-                    <li className="item item--3">
-                        <NavLink
-                            className={({ isActive }) =>
-                                ["link--active", isActive ? "active" : null,]
-                                    .filter(Boolean)
-                                    .join(" ")
-                            }
-                            end to="/artwork" > <span>Gallery</span> </NavLink>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-
-
-
+            
+            {/* Full Screen Menu Overlay */}
+            <div className={`fullscreen-menu ${isMenuOpen ? 'active' : ''}`}>
+                <div className="fullscreen-menu-background" onClick={toggleMenu}></div>
+                <nav className="fullscreen-menu-content">
+                    <ul className="fullscreen-list">
+                        <li className="fullscreen-item">
+                            <NavLink
+                                className={({ isActive }) =>
+                                    `fullscreen-link ${isActive ? 'active' : ''}`
+                                }
+                                end to="/home"
+                                onClick={toggleMenu}
+                            >
+                                <span>home</span>
+                            </NavLink>
+                        </li>
+                        <li className="fullscreen-divider"></li>
+                        <li className="fullscreen-item">
+                            <NavLink
+                                className={({ isActive }) =>
+                                    `fullscreen-link ${isActive ? 'active' : ''}`
+                                }
+                                end to="/about"
+                                onClick={toggleMenu}
+                            >
+                                <span>about me</span>
+                            </NavLink>
+                        </li>
+                        <li className="fullscreen-divider"></li>
+                        <li className="fullscreen-item">
+                            <NavLink
+                                className={({ isActive }) =>
+                                    `fullscreen-link ${isActive ? 'active' : ''}`
+                                }
+                                end to="/artwork"
+                                onClick={toggleMenu}
+                            >
+                                <span>Gallery</span>
+                            </NavLink>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-
-
-
-
-
-
-
     );
-}
-
+};
 
 export default Links;
