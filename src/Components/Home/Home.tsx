@@ -43,7 +43,7 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 {
     id: 1,
     tag: 'UX/UI Design',
-    title: 'Finkargo - B2B Fintech Platform',
+    title: 'Finkargo — B2B Fintech Platform',
     description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
     image: bannerFinkargo,
     path: '/design/1',

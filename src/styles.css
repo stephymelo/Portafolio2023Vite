@@ -1365,17 +1365,12 @@ footer {
   src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 }
 @font-face {
-  font-family: "Americana";
-  src: url("/src/assets/Fonts/Americana.otf") format("opentype");
+  font-family: "Recia";
+  src: url("/src/assets/Fonts/Recia-Medium.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "GT Americana";
-  src: url("/src/assets/Fonts/GTAmericana.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
