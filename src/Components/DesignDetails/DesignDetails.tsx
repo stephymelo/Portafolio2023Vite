@@ -34,6 +34,7 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
         listTitle4,
         list4,
         bannerImg,
+        bannerImgMobile,
         background,
         paragraph1,
         paragraph2,
@@ -52,11 +53,16 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
 
     return (
         <section className='design-section'>
-            <div className='design-section__content'>
-                <h1 className='content-title'>{title}</h1>
-                <h2 className='content-role'>{role}</h2>
-                <h4 className='content-subtitle'>{subtitle}</h4>
-                <img className='design-section-banner' src={bannerImg} alt={title} />
+            <div className="design-section__content">
+                <h1 className="design-section__title">{title}</h1>
+                <h2 className="design-section__role">{role}</h2>
+                <h4 className="design-section__subtitle">{subtitle}</h4>
+
+                {/* Desktop banner */}
+                <img className="design-section__banner--desktop" src={bannerImg} alt={title} />
+
+                {/* Mobile banner */}
+                <img className="design-section__banner--mobile" src={bannerImgMobile} alt={title} />
             </div>
 
             <section className='design-details'>

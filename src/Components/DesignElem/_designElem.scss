@@ -1,3 +1,5 @@
+@use "../../Styles/index" as *;
+
 .elem {
   width: 100%;
   display: flex;
@@ -27,13 +29,16 @@
     height: 100%;
     object-fit: cover;
     display: block;
-
     border-radius: 12px;
     transition: transform 0.4s;
   }
 
   .image:hover {
     transform: scale(1.02);
+  }
+
+  .image-mobile {
+    display: none;
   }
 
   &__text {
@@ -44,11 +49,10 @@
     text-align: left;
   }
 
-  &__tag{
-    color:$lightpurple;
+  &__tag {
+    color: $lightpurple;
     font-weight: 500;
   }
-
 }
 
 @media screen and (max-width: 780px) {
@@ -58,13 +62,19 @@
 
     .image__container {
       width: 100%;
-      height: auto;
+      border-radius: inherit;
+      overflow: hidden;
     }
 
     .image {
+      display: none; // hide desktop image
+    }
+
+    .image-mobile {
+      display: block;
       width: 100%;
-      height: auto;
-      object-fit: cover;
+      height: auto; // allow the image to scale naturally
+      object-fit: contain;
     }
   }
 }

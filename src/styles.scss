@@ -1,20 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+// Utilities
+// @use "./Styles/colors";      
+// @use "./Styles/reset";
+// @use "./Styles/types";
+// @use "./Styles/elements";
+@use "./Styles/index" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap");
-@import "./Styles/reset";
-@import "./Styles/colors";
-@import "./Styles/types";
-@import "./Styles/elements";
-@import "./Components/About/about";
-@import "./Components/Home/home";
-@import "./Components/Design/design";
-@import "./Components/DesignElem/designElem";
-@import "./Components/DesignDetails/designDetails";
-@import "./Components/Artwork/artwork";
-@import "./Components/Menu/menu";
-@import "./Components/Contact/contact";
-@import "./Components/Menu/Link/links";
-@import "./Components/Loader/Loader";
+// Components
+@use "./Components/About/about";
+@use "./Components/Home/home";
+@use "./Components/Design/design";
+@use "./Components/DesignElem/designElem";
+@use "./Components/DesignDetails/designDetails";
+@use "./Components/Artwork/artwork";
+@use "./Components/Menu/menu";
+@use "./Components/Contact/contact";
+@use "./Components/Menu/Link/links";
+@use "./Components/Loader/Loader";
 
 @font-face {
     font-family: SpaceGrotesk, sans-serif;
@@ -22,17 +23,12 @@
 }
 
 @font-face {
-    font-family: "Americana";
-    src: url("/src/assets/Fonts/Americana.otf") format("opentype");
+    font-family: "Recia";
+    src: url("/src/assets/Fonts/Recia-Medium.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: "GT Americana";
-    src: url("/src/assets/Fonts/GTAmericana.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 
 #app {

@@ -14,6 +14,7 @@ export type DesignDetailsObj = {
     list4: string;
     date: string;
     bannerImg: string;
+    bannerImgMobile: string;
     bannerThumbnail: string;
     background: string;
     subtitle1: string;

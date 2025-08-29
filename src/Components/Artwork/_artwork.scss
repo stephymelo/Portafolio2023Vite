@@ -1,3 +1,4 @@
+@use "../../Styles/index" as *;
 /* Existing artwork styles */
 .artwork {
     margin-top: 15em;
@@ -356,7 +357,7 @@
         position: static !important;
         padding: 10px 1px 1px;
         background: none;
-        color: $textSecondary;
+        color: textSecondary;
         opacity: 1 !important;
         font-size: 14px;
         text-align: left;

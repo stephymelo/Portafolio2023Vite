@@ -12,7 +12,7 @@
         height: 80vh;
 
         &--subtitle {
-            color: $textTerciary;
+            color: textTerciary;
             font-weight: 600;
             font-size: 18px;
         }
@@ -20,25 +20,30 @@
         &--title {
             margin-top: 0.3em;
             line-height: 160%;
-            width:80%;
+            width: 80%;
         }
-        .arrowDown{
-            margin-top:5em;
+
+        .arrowDown {
+            margin-top: 5em;
             animation: floatUpDown 2s ease-in-out infinite;
         }
-        @keyframes floatUpDown {
-            0%, 100% {
-              transform: translateY(0);
-            }
-            50% {
-              transform: translateY(-10px);
-            }
-          }
 
-        .subtitle__container{
+        @keyframes floatUpDown {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .subtitle__container {
             display: flex;
             flex-direction: row;
-            gap:8px;
+            gap: 8px;
             width: 100%;
         }
     }
@@ -46,13 +51,14 @@
     .design__container {
         padding-left: 10em;
         padding-right: 10em;
-        padding-bottom:5em;
+        padding-bottom: 5em;
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 10em;
 
         .elem {
+
             &:nth-child(1),
             &:nth-child(3),
             &:nth-child(5),
@@ -63,14 +69,15 @@
             &:nth-child(2),
             &:nth-child(4),
             &:nth-child(6),
-            &:nth-child(8){
+            &:nth-child(8) {
                 flex-direction: row-reverse;
                 align-self: flex-end;
+
                 .elem__text {
                     text-align: right;
                 }
             }
-          
+
         }
     }
 }
@@ -80,7 +87,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-    
+
         &__article {
             padding-left: 1em;
             padding-right: 1em;
@@ -89,22 +96,23 @@
             gap: 0.5em;
             margin-top: 12em;
             height: 80vh;
-    
+
             &--subtitle {
                 font-weight: 600;
             }
-    
+
             &--title {
                 margin-top: 0.3em;
                 line-height: 160%;
             }
-            .subtitle__container{
+
+            .subtitle__container {
                 display: flex;
                 flex-direction: column;
-                gap:4px;
+                gap: 4px;
             }
         }
-    
+
         .design__container {
             padding-left: 1em;
             padding-right: 1em;
@@ -112,25 +120,30 @@
             display: flex;
             flex-direction: column;
             gap: 8em;
-    
+
             .elem {
+
                 &:nth-child(1),
                 &:nth-child(3),
-                &:nth-child(5) {
+                &:nth-child(5),
+                &:nth-child(7) {
                     align-self: flex-start;
                 }
-    
+
                 &:nth-child(2),
-                &:nth-child(4) {
+                &:nth-child(4),
+                &:nth-child(6),
+                &:nth-child(8) {
                     flex-direction: column;
                     align-self: flex-end;
+
                     .elem__text {
                         text-align: left;
                     }
                 }
-              
+
             }
         }
     }
-    
+
 }

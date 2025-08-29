@@ -5,5 +5,6 @@ export type DesignElemObj = {
     title: string;
     description: string;
     image: string;
+    imageMobile:string;
     path:string;
 }

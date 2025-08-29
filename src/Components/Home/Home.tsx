@@ -6,19 +6,29 @@ import DesignElem from '../DesignElem/DesignElem';
 //BannersAndImages
 //HL
 import bannerHL from '../../assets/Images/HLProject/BannerDesignHL.png';
+import bannerHLMobile from '../../assets/Images/HLProject/BannerDesignHL-Mobile.jpg';
 //TA
-import bannerTA from '../../assets/Images/TAProject/BannerDesignTA.png';
+import bannerTA from '../../assets/Images/TAProject/BannerDesignTA.jpg';
+import bannerTAMobile from '../../assets/Images/TAProject/BannerDesignTA-Mobile.jpg';
 
 //NIL
 import bannerNil from '../../assets/Images/NILProject/BannerDesignNIL.png';
+import bannerPGMobile from '../../assets/Images/NILProject/BannerDesignPG-Mobile.jpg';
+
 //Close
 import bannerClose from '../../assets/Images/CloseProject/CloseBannerDesign.png';
+import bannerCloseMobile from '../../assets/Images/CloseProject/BannerDesignClose-Mobile.jpg';
+
 //Finkargo
 import bannerFinkargo from '../../assets/Images/FinkargoProject/BannerDesignFK.png';
+import bannerFinkargoMobile from '../../assets/Images/FinkargoProject/BannerDesignFK-Mobile.jpg';
+
 //Eficacia
 import bannerEficacia from '../../assets/Images/EficaciaProject/BannerDesignEfipuntos.png';
+import bannerEficaciaMobile from '../../assets/Images/EficaciaProject/BannerDesignEfi-Mobile.jpg';
 //Verby
 import bannerVerby from '../../assets/Images/VerbyProject/BannerDesignVerby.png';
+import bannerVerbyMobile from '../../assets/Images/VerbyProject/BannerDesignVerby-Mobile.jpg';
 
 
 interface HomeProps {
@@ -32,64 +42,71 @@ export const Home: React.FC<HomeProps> = ({ setLoading }) => {
 
 
     const [designElems] = React.useState<DesignElemObj[]>([
-{
-    id: 0,
-    tag: 'UX/UI Design & Web Development',
-    title: 'Progen Global — E-commerce with Shopify, Amazon & Social Media',
-    description: 'Led research, design, and development to expand hair care sales across multi-channel e-commerce and retail platforms.',
-    image: bannerNil,
-    path: '/design/0',
-},
-{
-    id: 1,
-    tag: 'UX/UI Design',
-    title: 'Finkargo — B2B Fintech Platform',
-    description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
-    image: bannerFinkargo,
-    path: '/design/1',
-},
-{
-    id: 2,
-    tag: 'E-commerce Web Development',
-    title: 'TressAllure — Website Redesign to E-commerce',
-    description: 'Led the complete redesign and development of a B2C and B2B e-commerce platform for a premier wig brand.',
-    image: bannerTA,
-    path: '/design/2',
-},
+        {
+            id: 0,
+            tag: 'UX/UI Design & Web Development',
+            title: 'Progen Global — E-commerce with Shopify, Amazon & Social Media',
+            description: 'Led research, design, and development to expand hair care sales across multi-channel e-commerce and retail platforms.',
+            image: bannerNil,
+            imageMobile: bannerPGMobile,
+            path: '/design/0',
+        },
+        {
+            id: 1,
+            tag: 'UX/UI Design',
+            title: 'Finkargo — B2B Fintech Platform',
+            description: 'Conducted user research and designed platform interfaces using wireframes, prototypes, and a design system.',
+            image: bannerFinkargo,
+            imageMobile: bannerFinkargoMobile,
+            path: '/design/1',
+        },
+        {
+            id: 2,
+            tag: 'E-commerce Web Development',
+            title: 'TressAllure — Website Redesign to E-commerce',
+            description: 'Led the complete redesign and development of a B2C and B2B e-commerce platform for a premier wig brand.',
+            image: bannerTA,
+            imageMobile: bannerTAMobile,
+            path: '/design/2',
+        },
 
-{
-    id: 3,
-    tag: 'E-commerce Web Development',
-    title: 'Hairloss.com — E-commerce with Shopify & Social Media',
-    description: 'Directed branding, research, and development of an e-commerce platform, paired with targeted marketing campaigns.',
-    image: bannerHL,
-    path: '/design/3',
-},
+        {
+            id: 3,
+            tag: 'E-commerce Web Development',
+            title: 'Hairloss.com — E-commerce with Shopify & Social Media',
+            description: 'Directed branding, research, and development of an e-commerce platform, paired with targeted marketing campaigns.',
+            image: bannerHL,
+            imageMobile: bannerHLMobile,
+            path: '/design/3',
+        },
 
-{
-    id: 4,
-    tag: 'UX/UI Project',
-    title: 'Efipuntos — Coupons & Rewards App',
-    description: 'Designed an app experience where customers earn benefits and rewards through purchases and engagement.',
-    image: bannerEficacia,
-    path: '/design/4',
-},
-{
-    id: 5,
-    tag: 'UX/UI Case Study',
-    title: 'Close — Educational & Social App',
-    description: 'Integrated social interactions into a digital platform to enhance communication and user motivation.',
-    image: bannerClose,
-    path: '/design/5',
-},
-{
-    id: 6,
-    tag: 'Graduate Project',
-    title: 'Verby — Educational Tool',
-    description: 'Applied gamification and micro-learning to create an engaging way to learn specialized terminology.',
-    image: bannerVerby,
-    path: '/design/6',
-},
+        {
+            id: 4,
+            tag: 'UX/UI Project',
+            title: 'Efipuntos — Coupons & Rewards App',
+            description: 'Designed an app experience where customers earn benefits and rewards through purchases and engagement.',
+            image: bannerEficacia,
+            imageMobile: bannerEficaciaMobile,
+            path: '/design/4',
+        },
+        {
+            id: 5,
+            tag: 'UX/UI Case Study',
+            title: 'Close — Educational & Social App',
+            description: 'Integrated social interactions into a digital platform to enhance communication and user motivation.',
+            image: bannerClose,
+            imageMobile: bannerCloseMobile,
+            path: '/design/5',
+        },
+        {
+            id: 6,
+            tag: 'Graduate Project',
+            title: 'Verby — Educational Tool',
+            description: 'Applied gamification and micro-learning to create an engaging way to learn specialized terminology.',
+            image: bannerVerby,
+            imageMobile: bannerVerbyMobile,
+            path: '/design/6',
+        },
 
 
 

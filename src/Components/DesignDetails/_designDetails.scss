@@ -1,3 +1,5 @@
+@use "../../Styles/index" as *;
+
 .design-section {
   width: 100%;
   padding: 10em 0em;
@@ -10,29 +12,35 @@
 
   }
 
-   .content-title {
+  &__title {
     margin-bottom: 24px;
   }
-   .content-role {
+
+  &__role {
     margin-bottom: 16px;
-    color:$pink;
+    color: $pink;
   }
 
 
-  .content-subtitle {
+  &__subtitle {
     margin-bottom: 46px;
     color: $textTerciary;
 
   }
 
- 
-  .design-section-banner {
+
+  &__banner--desktop {
     width: 100%;
     border-radius: 16px;
+    display: block;
+  }
 
-
-
-
+  &__banner--mobile {
+    display: none; // hidden on desktop
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
   }
 }
 
@@ -126,6 +134,7 @@
   width: 100%;
   border-radius: 16px;
 }
+
 .custom-list-item {
   margin-bottom: 30px;
   padding-left: 1.5em; // give space for the bullet
@@ -213,6 +222,19 @@
 }
 
 @media (max-width: 780px) {
+
+
+  .design-section {
+
+  &__banner--desktop {
+    display: none;
+  }
+
+  &__banner--mobile {
+    display: block; 
+  }
+}
+
   .design-details {
     margin-top: 2rem;
     padding: 1rem;

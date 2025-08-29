@@ -15,6 +15,8 @@ import { Contact } from './Components/Contact/Contact';
 
 //NewImageLabs
 import bannerPG from './assets/Images/NILProject/BannerPG.jpg';
+import bannerPGMobile from './assets/Images/NILProject/BannerElemPG-Mobile.jpg';
+
 import bannerNilThumb from './assets/Images/NILProject/BannerThumbnailNIL.png';
 import userProgen from './assets/Images/NILProject/user-PG.png';
 import researchProgen from './assets/Images/NILProject/Research-PG.png';
@@ -24,7 +26,8 @@ import pagesProgen from './assets/Images/NILProject/heatmaps-PG.png';
 import homeProgen from './assets/Images/NILProject/home.png';
 
 //TA
-import bannerTA from './assets/Images/TAProject/BannerDesignTA.png';
+import bannerTA from './assets/Images/TAProject/BannerDesignTA.jpg';
+import bannerTAMobile from './assets/Images/TAProject/BannerDesignTA-Mobile.jpg';
 import bannerTAThumb from './assets/Images/TAProject/BannerThumbnailTA.png';
 import beforeAfterTA from './assets/Images/TAProject/before-after.png';
 import homeTA from './assets/Images/TAProject/homeTa.png';
@@ -35,6 +38,7 @@ import retailersTA from './assets/Images/TAProject/retailers-list.png';
 
 //HL
 import bannerHL from './assets/Images/HLProject/BannerHL.jpg';
+import bannerHLMobile from './assets/Images/HLProject/BannerElemHL-Mobile.jpg';
 import bannerHLThumb from './assets/Images/HLProject/BannerThumbnailHL.png';
 import wireframeHL from './assets/Images/HLProject/homeHL.png';
 import homeHL from './assets/Images/HLProject/hlHome.png';
@@ -53,10 +57,12 @@ import wireframes from './assets/Images/CloseProject/Wireframess.png';
 import finalsclose from './assets/Images/CloseProject/FinalPages.png';
 import journeyclose from './assets/Images/CloseProject/JourneyMap.jpg';
 import mockupfinal from './assets/Images/CloseProject/Mockup.png';
+import bannerCloseMobile from './assets/Images/CloseProject/BannerElemClose-Mobile.jpg';
 
 
 //Finkargo
 import bannerFinkargo from './assets/Images/FinkargoProject/BannerElemFK.jpg';
+import bannerFinkargoMobile from './assets/Images/FinkargoProject/BannerElemFK-Mobile.jpg';
 import bannerFinkargoThumb from './assets/Images/FinkargoProject/BannerThumbnailFintech.png';
 import userflowFK from './assets/Images/FinkargoProject/userFK.png';
 import roadmapFK from './assets/Images/FinkargoProject/planFK.png';
@@ -69,6 +75,7 @@ import iconsFK from './assets/Images/FinkargoProject/Iconography-FK.png'
 
 //Eficacia
 import bannerEficacia from './assets/Images/EficaciaProject/BannerDesignEfipuntos.png';
+import bannerEficaciaMobile from './assets/Images/EficaciaProject/BannerElemEfi-Mobile.jpg';
 import bannerEficaciaThumb from './assets/Images/EficaciaProject/BannerThumbnailEfi.png';
 import roadmapEficacia from './assets/Images/EficaciaProject/roadmapEficacia.png';
 import userEficacia from './assets/Images/EficaciaProject/userEficacia.png';
@@ -78,7 +85,8 @@ import logoEficacia from './assets/Images/EficaciaProject/logoEficacia.png';
 import userFlowEficacia from './assets/Images/EficaciaProject/useflowEficacia.png';
 
 //Verby
-import bannerVerby from './assets/Images/VerbyProject/BannerDesignVerby.png';
+import bannerVerby from './assets/Images/VerbyProject/BannerElem-Verby.jpg';
+import bannerVerbyMobile from './assets/Images/VerbyProject/BannerElemVerby-Mobile.jpg';
 import bannerVerbyThumb from './assets/Images/VerbyProject/BannerThumbnailVerby.png';
 import mapVerby from './assets/Images/VerbyProject/map.png';
 import userPersonaVerby from './assets/Images/VerbyProject/UserPerosnaVeryb.png';
@@ -124,6 +132,7 @@ function App() {
       listTitle4: 'Innovative Features',
       list4: 'Developed functionalities to support both B2B and B2C operations, seamlessly integrating online sales with the sales team. This ensured a smooth workflow for order processing, client management, and communication between digital and physical sales channels.',
       bannerImg: bannerPG,
+      bannerImgMobile: bannerPGMobile,
       bannerThumbnail: bannerNilThumb,
       subtitle1: 'Investigation and Userflows',
       paragraph1: '',
@@ -165,6 +174,7 @@ function App() {
       listTitle4: 'Iniciatives for documentation',
       list4: 'We utilized collaborative tools like Miro and Confluence to document each project, ensuring accessible information for the entire team.',
       bannerImg: bannerFinkargo,
+      bannerImgMobile: bannerFinkargoMobile,
       bannerThumbnail: bannerFinkargoThumb,
       subtitle1: 'Look and feel',
       paragraph1: 'Using the brands colors, shapes and taking into account the context, messaging and tone, we created icons for various to use throughout the platform.',
@@ -199,6 +209,7 @@ function App() {
       listTitle4: 'Launching the new site 2025',
       list4: 'The site is on track to launch by end of this month with all the main features and pages wanted by the stakeholders.',
       bannerImg: bannerTA,
+      bannerImgMobile: bannerTAMobile,
       bannerThumbnail: bannerTAThumb,
       background: 'TressAllure, created in the year 2000, is a wig brand that mainly focuses on ready-to-wear synthetic wigs.',
       subtitle1: 'Understanding the needs of business for the website - Retailers and End-Consumers',
@@ -235,6 +246,7 @@ function App() {
       listTitle4: 'Launching as a trusted destination for hair loss solutions',
       list4: 'Hairloss.com will serve as a direct-to-consumer hub offering wigs, hair systems, and support resources with a focus on empathy and usability.',
       bannerImg: bannerHL,
+      bannerImgMobile: bannerHLMobile,
       bannerThumbnail: bannerHLThumb,
       subtitle1: 'Understanding the needs of end-consumers',
       paragraph1: '',
@@ -271,6 +283,7 @@ function App() {
       listTitle4: 'High-fidelity prototype with Eficacia database',
       list4: 'We integrated the database of the companies products to have real time coupons and promotions shown in the web app',
       bannerImg: bannerEficacia,
+      bannerImgMobile: bannerEficaciaMobile,
       bannerThumbnail: bannerEficaciaThumb,
       subtitle1: 'Initial analysis',
       paragraph1: '',
@@ -306,6 +319,7 @@ function App() {
       listTitle4: 'Innovative funcionalities',
       list4: 'We integrated functionalities that would help the student concentrate in class and also have a social interaction similar to in-person classes.',
       bannerImg: bannerClose,
+      bannerImgMobile: bannerCloseMobile,
       bannerThumbnail: bannerCloseThumb,
       subtitle1: 'Investigation',
       paragraph1: '',
@@ -342,6 +356,7 @@ function App() {
       listTitle4: 'The importance of technical language in English',
       list4: 'With a globalized world, many tech professions are requiered to know English and it can be the deciding factor in an interview',
       bannerImg: bannerVerby,
+      bannerImgMobile: bannerVerbyMobile,
       bannerThumbnail: bannerVerbyThumb,
       subtitle1: 'Wireframes and concepts',
       paragraph1: '',
