@@ -13,6 +13,8 @@ import { Contact } from './Components/Contact/Contact';
 
 //BannersAndImages
 
+import spacer from './assets/Icons/emptyspace.png'
+
 //NewImageLabs
 import bannerPG from './assets/Images/NILProject/BannerPG.jpg';
 import bannerPGMobile from './assets/Images/NILProject/BannerElemPG-Mobile.jpg';
@@ -29,11 +31,13 @@ import homeProgen from './assets/Images/NILProject/home.png';
 import bannerTA from './assets/Images/TAProject/BannerDesignTA.jpg';
 import bannerTAMobile from './assets/Images/TAProject/BannerDesignTA-Mobile.jpg';
 import bannerTAThumb from './assets/Images/TAProject/BannerThumbnailTA.png';
-import beforeAfterTA from './assets/Images/TAProject/before-after.png';
-import homeTA from './assets/Images/TAProject/homeTa.png';
-import sitemapTA from './assets/Images/TAProject/sitemap.png';
+import beforeAfterTA from './assets/Images/TAProject/ba-TA.jpg';
+import sitemapTA from './assets/Images/TAProject/sitemap-TA.png';
+import lookfeelTA from './assets/Images/TAProject/lookfeel-TA.jpg';
 import menuTA from './assets/Images/TAProject/Menu.png';
-import retailersTA from './assets/Images/TAProject/retailers-list.png';
+import mockupTA from './assets/Images/TAProject/Final-TA.jpg';
+
+import retailersTA from './assets/Images/TAProject/Research-TA.jpg';
 
 
 //HL
@@ -213,19 +217,19 @@ function App() {
       bannerThumbnail: bannerTAThumb,
       background: 'TressAllure, created in the year 2000, is a wig brand that mainly focuses on ready-to-wear synthetic wigs.',
       subtitle1: 'Understanding the needs of business for the website - Retailers and End-Consumers',
-      paragraph1: '',
+      paragraph1: 'By understanding their business model, vision, and mission, I was able to revamp their image. I ensured their core ideals were reflected across the website assets and imagery, while also incorporating the new rebrand colors.',
       image1: retailersTA,
-      image2: '',
+      image2: lookfeelTA,
       subtitle2: 'Creating the information architecture',
       paragraph2: 'After several meetings with the team, researching the companies customer base, I created the sitemap and userflows for the new website. We needed to ensure easy navigability for both types of customers and for our 3 types of users. ',
       image3: sitemapTA,
-      image4: menuTA,
+      image4: spacer,
       subtitle3: 'Designing with intention',
       paragraph3: 'It is important to integrate the branding to create recognition throughout all touchpoints that they have. We created the design system to ensure that the branding was represented and was consistent throughout not only the whole website but their physical catalogs. ',
       subtitle4: 'Design systems for consistency throughout',
       paragraph4: 'We created the design system to ensure that the branding was represented and was consistent throughout not only the whole website but their physical catalogs.',
       image5: beforeAfterTA,
-      image6: homeTA,
+      image6: mockupTA,
 
     },
     {
