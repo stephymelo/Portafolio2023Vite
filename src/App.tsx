@@ -308,8 +308,8 @@ function App() {
 
       id: 5,
       title: 'Close Web App',
-      subtitle: 'UX UI Case Study',
-      role: 'UX researcher, discovery, investigation, wireframing, testing ',
+      subtitle: 'UX/UI Case Study',
+      role: 'UX/UI',
       overview: 'Close began as discovery for alternative ways to communicate and interact within a digital classroom due to the COVID-19 pandemic in 2020. The goal of the project was to engage students in a digital classroom and aument their social interaction with their professors and classmates. ',
       date: 'August 2020',
       background: 'For a joint project in my classes at Icesi University – Human Computer Interaction and Investigation in Design – I teamed up with fellow designers. Our project was to tackle a real-world issue by exploring, investigating, and proposing a digital solution. Our focus landed on a prevalent challenge: the shift from physical classrooms to virtual ones was impacting interpersonal relationships among students. The lack of traditional face-to-face interactions was something that we had to solve and we were determined to find a way to promote social connections and active participation in this new virtual classroom landscape. It was a puzzle we eagerly dove into, seeking to bridge the gap between digital learning and the personal touch of traditional classrooms.',
