@@ -34,7 +34,6 @@ import bannerTAThumb from './assets/Images/TAProject/BannerThumbnailTA.png';
 import beforeAfterTA from './assets/Images/TAProject/ba-TA.jpg';
 import sitemapTA from './assets/Images/TAProject/sitemap-TA.png';
 import lookfeelTA from './assets/Images/TAProject/lookfeel-TA.jpg';
-import menuTA from './assets/Images/TAProject/Menu.png';
 import mockupTA from './assets/Images/TAProject/Final-TA.jpg';
 
 import retailersTA from './assets/Images/TAProject/Research-TA.jpg';
@@ -55,12 +54,12 @@ import prototypeHL from './assets/Images/HLProject/prototypeHL.png';
 //Close
 import bannerClose from './assets/Images/CloseProject/CloseBannerDesign.png';
 import bannerCloseThumb from './assets/Images/CloseProject/BannerThumbnailClose.png';
-import userClose from './assets/Images/CloseProject/UserPersona.png';
-import userflowClose from './assets/Images/CloseProject/Useflow.png';
-import wireframes from './assets/Images/CloseProject/Wireframess.png';
-import finalsclose from './assets/Images/CloseProject/FinalPages.png';
-import journeyclose from './assets/Images/CloseProject/JourneyMap.jpg';
-import mockupfinal from './assets/Images/CloseProject/Mockup.png';
+import userClose from './assets/Images/CloseProject/journey-close.jpg';
+import userflowClose from './assets/Images/CloseProject/flow-close.png';
+import wireframesClose from './assets/Images/CloseProject/wireframes-close.png';
+import finalsClose from './assets/Images/CloseProject/finals-close.jpg';
+import dsClose from './assets/Images/CloseProject/ds-close.jpg';
+import mockupfinal from './assets/Images/CloseProject/finals2-close.jpg';
 import bannerCloseMobile from './assets/Images/CloseProject/BannerElemClose-Mobile.jpg';
 
 
@@ -144,7 +143,7 @@ function App() {
       image2: userProgen,
       subtitle2: 'The process of Designing',
       paragraph2: 'Due to the company’s structure, user testing was conducted internally. When designing new pages or promotional content, I started with wireframes in Figma, followed by high-fidelity designs that aligned with the brand’s color palette and identity. Additionally, I assisted in aligning marketing materials and email marketing designs to ensure brand consistency across all digital channels. I also contributed by taking and editing product photos with the marketing team. ',
-   
+
       subtitle3: 'Implementing and Iterating',
       paragraph3: `Shopify’s unique templating language, Liquid, combined with HTML, JavaScript, and CSS, enabled me to develop fully responsive and functional designs.
       I built custom components with Liquid to enhance the theme, meeting the company’s needs for both B2B and B2C commerce within a single platform.
@@ -326,18 +325,20 @@ function App() {
       bannerImgMobile: bannerCloseMobile,
       bannerThumbnail: bannerCloseThumb,
       subtitle1: 'Investigation',
-      paragraph1: '',
+      paragraph1: 'Our investigation involved students from diverse majors. We aimed to understand their experiences using the current tools for virtual classes, their interactions with other students, and their overall feelings about these experiences.',
       image1: userflowClose,
-      subtitle2: 'Wireframing and Validating',
-      paragraph2: '',
       image2: userClose,
+      subtitle2: 'Design System and Wireframes',
+      paragraph2: 'We went for a dark theme for the app and chose orange as a contrast color, going away from the popular tools used in university that are usually cool tones.',
+
       subtitle3: 'Final designs',
-      paragraph3: '',
-      image3: wireframes,
+      paragraph3: 'The final designs highlight the core functionalities and value of creating an all-in-one tool—one that enables teaching virtual classes, accessing class materials, and staying socially connected with classmates.',
+      image3: dsClose,
+      image4: wireframesClose,
       subtitle4: 'Results and key takeways',
       paragraph4: 'Exploring new classroom features like markers and channels positively impacted students emotional well-being, fostering engagement and improved communication. However, challenges in using these tools revealed design flaws, particularly in visibility and recognition. Recommendations include clearer dashboard design, icon-based information condensation, and differentiation in the logbook. While users appreciated the prototypes benefits, improvements in design and functionality are necessary for enhanced usability and experience.',
-      image4: journeyclose,
-      image5: finalsclose,
+
+      image5: finalsClose,
       image6: mockupfinal
 
     },
