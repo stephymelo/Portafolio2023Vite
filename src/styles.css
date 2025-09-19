@@ -483,8 +483,8 @@ footer {
   cursor: pointer;
 }
 .elem .image__container {
-  width: 100%;
-  max-width: 800px;
+  width: 60%;
+  max-width: 650px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -510,6 +510,7 @@ footer {
   display: none;
 }
 .elem__text {
+  width: 40%;
   margin-top: 1.06em;
   display: flex;
   flex-direction: column;

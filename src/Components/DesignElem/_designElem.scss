@@ -11,8 +11,8 @@
   }
 
   .image__container {
-    width: 100%;
-    max-width: 800px; // Optional: limit width on desktop
+    width: 60%;
+    max-width: 650px; 
     overflow: hidden;
     border-radius: 12px;
   }
@@ -42,10 +42,12 @@
   }
 
   &__text {
+     width:40%;
     margin-top: 1.06em;
     display: flex;
     flex-direction: column;
     gap: 8px;
+   
     text-align: left;
   }
 
