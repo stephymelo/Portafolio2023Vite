@@ -43,12 +43,12 @@ import retailersTA from './assets/Images/TAProject/Research-TA.jpg';
 import bannerHL from './assets/Images/HLProject/BannerHL.jpg';
 import bannerHLMobile from './assets/Images/HLProject/BannerElemHL-Mobile.jpg';
 import bannerHLThumb from './assets/Images/HLProject/BannerThumbnailHL.png';
-import wireframeHL from './assets/Images/HLProject/homeHL.png';
-import homeHL from './assets/Images/HLProject/hlHome.png';
-import homeHLMobile from './assets/Images/HLProject/homeHLMobile.png';
-import serviceHL from './assets/Images/HLProject/serviceblueprint.png';
-import sitemapHL from './assets/Images/HLProject/sitemapHL.png';
-import prototypeHL from './assets/Images/HLProject/prototypeHL.png';
+import wireframeHL from './assets/Images/HLProject/wireframes-hl.jpg';
+import homeHL from './assets/Images/HLProject/proposols-hl.jpg';
+import homeHLMobile from './assets/Images/HLProject/mobile-hl.jpg';
+import serviceHL from './assets/Images/HLProject/user-hl.jpg';
+import sitemapHL from './assets/Images/HLProject/flow-hl.jpg';
+import prototypeHL from './assets/Images/HLProject/finals-hl.jpg';
 
 
 //Close
@@ -91,12 +91,12 @@ import userFlowEficacia from './assets/Images/EficaciaProject/useflowEficacia.pn
 import bannerVerby from './assets/Images/VerbyProject/BannerElem-Verby.jpg';
 import bannerVerbyMobile from './assets/Images/VerbyProject/BannerElemVerby-Mobile.jpg';
 import bannerVerbyThumb from './assets/Images/VerbyProject/BannerThumbnailVerby.png';
-import mapVerby from './assets/Images/VerbyProject/map.png';
-import userPersonaVerby from './assets/Images/VerbyProject/UserPerosnaVeryb.png';
-import iconsVerby from './assets/Images/VerbyProject/icons.png';
-import framesVerby from './assets/Images/VerbyProject/FramesVerby.png';
-import screensVerby from './assets/Images/VerbyProject/screens.png';
-import prototypeVerby from './assets/Images/VerbyProject/prototypeVerby.png';
+import mapVerby from './assets/Images/VerbyProject/journey-Verby.jpg';
+import userPersonaVerby from './assets/Images/VerbyProject/user-Verby.jpg';
+import iconsVerby from './assets/Images/VerbyProject/ds-Verby.jpg';
+import framesVerby from './assets/Images/VerbyProject/frames-Verby.jpg';
+import screensVerby from './assets/Images/VerbyProject/pattern-frames-Verby.jpg';
+import prototypeVerby from './assets/Images/VerbyProject/mockup-Verby.jpg';
 
 import { Loader } from './Components/Loader/Loader';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
@@ -252,18 +252,18 @@ function App() {
       bannerImgMobile: bannerHLMobile,
       bannerThumbnail: bannerHLThumb,
       subtitle1: 'Understanding the needs of end-consumers',
-      paragraph1: '',
+      paragraph1: 'Due to the nature of hair loss, it was important to narrow down the niche to really focus on people that have conditions related to hair loss. Understanding their emotional perspective helped shape their potential and current buying behaviors to treat the condition.',
       image1: serviceHL,
       image2: sitemapHL,
       subtitle2: 'Wireframes and prototyping',
-      paragraph2: '',
+      paragraph2: 'I created wireframes taking into account the information that is needed for wig type products, based on this some proposols were made in high-fideltity. The prototype was made on Figma for everyone in the team to navigate and give their feedback on which design they preferred.',
       image3: wireframeHL,
-      image4: prototypeHL,
+      image4: homeHL,
       subtitle3: 'Designing for trust and reassurance',
       paragraph3: 'Every element of the design—from color palettes to typography—was chosen to foster confidence, empathy, and clarity for customers making a sensitive purchase.',
       subtitle4: 'Consistency across touchpoints',
       paragraph4: 'A design system was created to maintain consistency across the website, email communications, and educational resources, reinforcing trust and credibility.',
-      image5: homeHL,
+      image5: prototypeHL,
       image6: homeHLMobile,
     },
 
