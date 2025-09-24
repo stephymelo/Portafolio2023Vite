@@ -80,12 +80,12 @@ import iconsFK from './assets/Images/FinkargoProject/Iconography-FK.png'
 import bannerEficacia from './assets/Images/EficaciaProject/BannerDesignEfipuntos.png';
 import bannerEficaciaMobile from './assets/Images/EficaciaProject/BannerElemEfi-Mobile.jpg';
 import bannerEficaciaThumb from './assets/Images/EficaciaProject/BannerThumbnailEfi.png';
-import roadmapEficacia from './assets/Images/EficaciaProject/roadmapEficacia.png';
-import userEficacia from './assets/Images/EficaciaProject/userEficacia.png';
-import appEficacia from './assets/Images/EficaciaProject/appEficacia.png';
-import mockupEficacia from './assets/Images/EficaciaProject/EfipuntosMockup.png';
-import logoEficacia from './assets/Images/EficaciaProject/logoEficacia.png';
-import userFlowEficacia from './assets/Images/EficaciaProject/useflowEficacia.png';
+import roadmapEficacia from './assets/Images/EficaciaProject/research-efi.jpg';
+import userEficacia from './assets/Images/EficaciaProject/user-efi.jpg';
+import appEficacia from './assets/Images/EficaciaProject/mockup-efi.jpg';
+import mockupEficacia from './assets/Images/EficaciaProject/mockupfinal-efi.jpg';
+import logoEficacia from './assets/Images/EficaciaProject/ds-efi.jpg';
+import userFlowEficacia from './assets/Images/EficaciaProject/frames-efi.jpg';
 
 //Verby
 import bannerVerby from './assets/Images/VerbyProject/BannerElem-Verby.jpg';
@@ -293,15 +293,15 @@ function App() {
       image1: roadmapEficacia,
       subtitle2: 'Investigation',
       paragraph2: 'We conducted observations and interviews with buyers inside of supermarkets to understand their buying habits and thought process. We also had co-creation sessions with stakeholders in Miro. ',
-      image2: userFlowEficacia,
+      image2: userEficacia,
       subtitle3: 'Prototype',
       paragraph3: 'After presenting the initial prototype to the stakeholders and gathering valuable feedback, we expanded upon the concept. The updated idea included not only earning rewards through the purchase of products represented by Eficacia but also through participation in special events designed to promote new launches. This added dimension enhances user engagement and offers additional avenues for gaining points and coupons. Finally, we delivered a high-fidelity prototype in React TS, including connections to a database to simulate earning and redeeming coupons with different accounts.',
-      image3: userEficacia,
+      image3: logoEficacia,
       subtitle4: 'Results and key takeways',
       paragraph4: 'Working for the first with a real client and stakeholders was an interesting challenge and learning experience.',
-      image4: mockupEficacia,
+      image4: userFlowEficacia,
       image5: appEficacia,
-      image6: logoEficacia,
+      image6: mockupEficacia,
 
     },
     {
