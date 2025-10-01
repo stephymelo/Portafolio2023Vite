@@ -24,7 +24,7 @@ export const About: React.FC<About> = () => {
                     </div>
                     <div className='links'>
                         <h6 className='linktitle'>LINKS</h6>
-                        <a  href="https://drive.google.com/file/d/1H_789Atam2Ux-PsBIg6o5sdmGNOaCZec/view?usp=drive_link"><p className='link'>Resume</p></a>
+                        {/* <a  href="https://drive.google.com/file/d/1H_789Atam2Ux-PsBIg6o5sdmGNOaCZec/view?usp=drive_link"><p className='link'>Resume</p></a> */}
                         <a href="https://www.linkedin.com/in/stephanie-melo-henao/"><p className='link'>Linkedin</p></a>
                     </div>
                 </article>

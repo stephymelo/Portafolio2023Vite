@@ -7,7 +7,7 @@ import space from '../../assets/Images/ArtGallery/space.png';
 import girl1 from '../../assets/Images/ArtGallery/Alice.jpg';
 import fairy from '../../assets/Images/ArtGallery/Fairy.jpg';
 import inked from '../../assets/Images/ArtGallery/DesignInkBG.png';
-import catalogMen from '../../assets/Images/ArtGallery/catalog-men-nil-mockup.png';
+import catalogMen from '../../assets/Images/ArtGallery/catalogs-nil.jpg';
 import raven from '../../assets/Images/ArtGallery/raven.png';
 import final from '../../assets/Images/ArtGallery/final.jpg';
 import shirt from '../../assets/Images/ArtGallery/blackVersion2.jpg';
